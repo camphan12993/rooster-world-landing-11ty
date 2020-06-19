@@ -10,5 +10,5 @@ collections:
     files:
       - label: 'Home Page'
         name: 'homePage'
-        file: 'index.md'
+        file: 'src/index.md'
         fields: [{ - label: 'Title', name: 'title', widget: 'string' }]
