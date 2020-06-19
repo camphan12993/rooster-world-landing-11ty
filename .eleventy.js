@@ -1,5 +1,6 @@
 module.exports = function (config) {
   config.addPassthroughCopy('assets');
+  config.addPassthroughCopy('src/admin');
   return {
     dir: {
       input: 'src',

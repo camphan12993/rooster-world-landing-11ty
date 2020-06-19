@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update
+media_folder: '_site/images/uploads'
+public_folder: '/images/uploads'
+
+collections:
+  - name: 'posts'
+    label: 'Post'
+    folder: '_posts'
+    filter:
+      field: language
+      value: en
+    fields:
+      - { label: 'Language', name: 'language' }
