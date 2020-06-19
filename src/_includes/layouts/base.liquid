@@ -17,7 +17,9 @@
   </head>
   <body>
     {% include shared/header %}
-    {{ content | safe }}
+    <main>
+      {{ content | safe }}
+    </main>
     {% include shared/footer %}
   </body>
 </html>
