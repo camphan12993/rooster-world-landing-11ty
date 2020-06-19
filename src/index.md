@@ -1,42 +1,42 @@
 ---
-title: 'This is index file'
-layout: 'layouts/home.liquid'
+title: Welcome to Rooster World
+layout: layouts/home.liquid
 banners:
-  - img: 'assets/img/toy.png'
-  - img: 'assets/img/toy2.png'
-  - img: 'assets/img/toy3.png'
+  - img: assets/img/toy.png
+  - img: assets/img/toy2.png
+  - img: assets/img/toy3.png
 services:
-  - img: 'assets/img/3d-printing.jpg'
+  - img: assets/img/3d-printing.jpg
     name: 3D Printing
-  - img: 'assets/img/3dprint-service.jpg'
+  - img: assets/img/3dprint-service.jpg
     name: 3D Figures
-  - img: 'assets/img/design-service.jpg'
+  - img: assets/img/design-service.jpg
     name: 2D/3D Design
-  - img: 'assets/img/web-service.jpeg'
+  - img: assets/img/web-service.jpeg
     name: Website
 portfolios:
-  - name: 'Stationary'
-    description: 'A yellow pencil with envelopes on a clean, blue backdrop!'
-    img: 'assets/img/portfolio-1.jpg'
+  - name: Stationary
+    description: A yellow pencil with envelopes on a clean, blue backdrop!
+    img: assets/img/portfolio-1.jpg
     link:
-      - text: ''
-        url: '#'
-  - name: 'Stationary'
-    description: 'A yellow pencil with envelopes on a clean, blue backdrop!'
-    img: 'assets/img/portfolio-1.jpg'
+      - text: ""
+        url: "#"
+  - name: Stationary
+    description: A yellow pencil with envelopes on a clean, blue backdrop!
+    img: assets/img/portfolio-1.jpg
     link:
-      - text: ''
-        url: '#'
-  - name: 'Stationary'
-    description: 'A yellow pencil with envelopes on a clean, blue backdrop!'
-    img: 'assets/img/portfolio-1.jpg'
+      - text: ""
+        url: "#"
+  - name: Stationary
+    description: A yellow pencil with envelopes on a clean, blue backdrop!
+    img: assets/img/portfolio-1.jpg
     link:
-      - text: ''
-        url: '#'
-  - name: 'Stationary'
-    description: 'A yellow pencil with envelopes on a clean, blue backdrop!'
-    img: 'assets/img/portfolio-1.jpg'
+      - text: ""
+        url: "#"
+  - name: Stationary
+    description: A yellow pencil with envelopes on a clean, blue backdrop!
+    img: assets/img/portfolio-1.jpg
     link:
-      - text: ''
-        url: '#'
+      - text: ""
+        url: "#"
 ---
