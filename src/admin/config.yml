@@ -5,11 +5,10 @@ media_folder: '_site/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
-  - name: 'posts'
-    label: 'Post'
-    folder: '_posts'
-    filter:
-      field: language
-      value: en
-    fields:
-      - { label: 'Language', name: 'language' }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'Home Page'
+        name: 'homePage'
+        file: 'index.html'
+        fields: [{ - label: 'Title', name: 'title', widget: 'string' }]
