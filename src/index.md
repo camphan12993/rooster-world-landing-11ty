@@ -6,12 +6,7 @@ banners:
 services:
   - img: assets/img/3d-printing.jpg
     name: 3D Printing
-  - img: assets/img/3dprint-service.jpg
-    name: 3D Figures
-  - img: assets/img/design-service.jpg
-    name: 2D/3D Design
-  - img: assets/img/web-service.jpeg
-    name: Website
+    image: /assets/img/3dprint-service.jpg
 portfolios:
   - name: Stationary
     description: A yellow pencil with envelopes on a clean, blue backdrop!
