@@ -2,9 +2,7 @@
 title: Welcome to Rooster World
 layout: layouts/home.liquid
 banners:
-  - img: assets/img/toy.png
-  - img: assets/img/toy2.png
-  - img: assets/img/toy3.png
+  - /images/uploads/screen-shot-2020-06-02-at-14.06.11.png
 services:
   - img: assets/img/3d-printing.jpg
     name: 3D Printing
