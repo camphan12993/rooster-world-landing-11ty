@@ -15,28 +15,10 @@ services:
   - image: /assets/img/web-service.jpeg
     name: Website
 portfolios:
-  - name: Stationary
-    description: A yellow pencil with envelopes on a clean, blue backdrop!
-    image: assets/img/portfolio-1.jpg
-    link:
-      - text: ahaha
-        url: #abc
-  - name: Stationary
-    description: A yellow pencil with envelopes on a clean, blue backdrop!
-    image: assets/img/portfolio-1.jpg
-    link:
-      - text: ahaha
-        url: #abc
-  - name: Stationary
-    description: A yellow pencil with envelopes on a clean, blue backdrop!
-    image: assets/img/portfolio-1.jpg
-    link:
-      - text: ahaha
-        url: #abc
-  - name: Stationary
-    description: A yellow pencil with envelopes on a clean, blue backdrop!
-    image: assets/img/portfolio-1.jpg
-    link:
-      - text: ahaha
-        url: #abc
+  - link:
+      text: sadfsdf
+      url: sdfasfsdf
+    name: sdfsdaf
+    image: /assets/img/3d-printing.jpg
+    description: sdfsdafasdfsdf
 ---
