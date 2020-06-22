@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update
-media_folder: '_site/images/uploads'
-public_folder: '/images/uploads'
+media_folder: 'assets/img'
 
 collections:
   - name: 'pages'
@@ -11,4 +10,9 @@ collections:
       - label: 'Home Page'
         name: 'homePage'
         file: 'src/index.md'
-        fields: [{ - label: 'Title', name: 'title', widget: 'string' }]
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - label: 'Banners'
+            name: 'banners'
+            widget: 'list'
+            field: { label: Slide, name: slide, widget: image }
