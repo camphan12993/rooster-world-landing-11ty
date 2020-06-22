@@ -16,8 +16,8 @@ services:
     name: Website
 portfolios:
   - link:
-      text: sadfsdf
-      url: sdfasfsdf
+      text: hihi
+      url: "#"
     name: sdfsdaf
     image: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
