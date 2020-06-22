@@ -17,26 +17,26 @@ services:
 portfolios:
   - name: Stationary
     description: A yellow pencil with envelopes on a clean, blue backdrop!
-    img: assets/img/portfolio-1.jpg
+    image: assets/img/portfolio-1.jpg
     link:
-      - text: ""
-        url: "#"
+      - text: ahaha
+        url: #abc
   - name: Stationary
     description: A yellow pencil with envelopes on a clean, blue backdrop!
-    img: assets/img/portfolio-1.jpg
+    image: assets/img/portfolio-1.jpg
     link:
-      - text: ""
-        url: "#"
+      - text: ahaha
+        url: #abc
   - name: Stationary
     description: A yellow pencil with envelopes on a clean, blue backdrop!
-    img: assets/img/portfolio-1.jpg
+    image: assets/img/portfolio-1.jpg
     link:
-      - text: ""
-        url: "#"
+      - text: ahaha
+        url: #abc
   - name: Stationary
     description: A yellow pencil with envelopes on a clean, blue backdrop!
-    img: assets/img/portfolio-1.jpg
+    image: assets/img/portfolio-1.jpg
     link:
-      - text: ""
-        url: "#"
+      - text: ahaha
+        url: #abc
 ---

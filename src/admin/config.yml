@@ -26,3 +26,22 @@ collections:
               - name: 'image'
                 label: 'Image'
                 widget: 'image'
+          - label: 'Portfolios'
+            name: 'portfolios'
+            widget: 'list'
+            fields:
+              - name: 'name'
+                label: 'Name'
+                widget: 'string'
+              - name: 'image'
+                label: 'Image'
+                widget: 'image'
+              - name: 'description'
+                label: 'Description'
+                widget: 'string'
+              - name: 'link'
+                label: 'Link'
+                widget: 'object'
+                fields:
+                  - { name: 'text', label: 'Text', widget: 'string' }
+                  - { name: 'url', label: 'Url', widget: 'string' }

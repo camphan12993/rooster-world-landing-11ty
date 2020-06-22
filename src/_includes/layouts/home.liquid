@@ -14,7 +14,7 @@ layout: 'layouts/base.liquid'
         {% for item in banners %}
         <div
           class="mySlides faded {% if forloop.index == 1 %}active{% endif %}"
-          style="background-image: url('{{ item.img }}')"
+          style="background-image: url('{{ item }}')"
         ></div>
         {% endfor %}
 
@@ -61,7 +61,7 @@ layout: 'layouts/base.liquid'
         <div class="service-item rounded-circle mx-auto mb-3">
           <span
             class="service-img"
-            style="background-image: url('{{ item.img }}') "
+            style="background-image: url('{{ item.image }}') "
           >
           </span>
         </div>
