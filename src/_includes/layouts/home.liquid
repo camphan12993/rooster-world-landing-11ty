@@ -13,14 +13,19 @@ layout: 'layouts/base.liquid'
       <div class="col-md-6 slideshow-container h-100">
         {% for item in banners %}
         <div
-          class="mySlides faded {% if forloop.index == 1 %}active{% endif %}"
+          id="slide"
+          class="mySlides faded"
           style="background-image: url('{{ item }}')"
         ></div>
         {% endfor %}
 
         <div class="nav-dots">
           {% for banner in banners %}
-          <span class="dot"></span>
+          <span
+            id="dot"
+            class="dot"
+            onclick="changeSlide('{{ forloop.index0 }}')"
+          ></span>
           {% endfor %}
         </div>
       </div>
@@ -121,7 +126,7 @@ layout: 'layouts/base.liquid'
               </p>
             </span>
           </span>
-          <img class="img-fluid" src="{{ item.img }}" alt="" />
+          <img class="img-fluid" src="{{ item.image }}" alt="" />
         </a>
       </div>
       {% endfor %}
