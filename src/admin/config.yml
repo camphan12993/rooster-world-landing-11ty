@@ -15,4 +15,14 @@ collections:
           - label: 'Banners'
             name: 'banners'
             widget: 'list'
-            field: { label: Slide, name: slide, widget: image }
+            field: { label: 'Slide', name: 'slide', widget: 'image' }
+          - label: 'Services'
+            name: 'services'
+            widget: 'list'
+            fields:
+              - name: 'name'
+                label: 'Name'
+                widget: 'string'
+              - name: 'image'
+                label: 'Image'
+                widget: 'image'
