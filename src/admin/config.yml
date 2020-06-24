@@ -45,6 +45,9 @@ collections:
                 fields:
                   - { name: 'text', label: 'Text', widget: 'string' }
                   - { name: 'url', label: 'Url', widget: 'string' }
+  - name: 'components'
+    label: 'Components'
+    files:
       - name: 'header'
         label: 'Header'
         file: 'src/_data/header.json'
@@ -57,4 +60,27 @@ collections:
             widget: 'list'
             fields:
               - { name: 'label', label: 'Label', widget: 'string' }
+              - { name: 'url', label: 'Url', widget: 'string' }
+      - name: 'footer'
+        label: 'Footer'
+        file: 'src/_data/footer.json'
+        fields:
+          - name: 'title'
+            label: 'Title'
+            widget: 'string'
+          - name: 'socials'
+            label: 'Social Item'
+            widget: 'list'
+            fields:
+              - { name: 'name', label: 'Name', widget: 'string' }
+              - { name: 'icon', label: 'Icon', widget: 'string' }
+              - { name: 'url', label: 'Url', widget: 'string' }
+          - name: 'copyRight'
+            label: 'Copy Right'
+            widget: 'string'
+          - name: 'madeBy'
+            label: 'Made By'
+            widget: 'object'
+            fields:
+              - { name: 'author', label: 'Author', widget: 'string' }
               - { name: 'url', label: 'Url', widget: 'string' }
