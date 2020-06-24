@@ -92,9 +92,8 @@ collections:
         file: 'src/_data/settings.json'
         fields:
           - name: 'theme'
-            label: 'Themes'
+            label: 'Theme'
             widget: 'select'
             options:
               - { label: 'Default', value: 'default' }
               - { label: 'Dark', value: 'dark' }
-            default: ['default']
