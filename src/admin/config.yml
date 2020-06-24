@@ -45,3 +45,16 @@ collections:
                 fields:
                   - { name: 'text', label: 'Text', widget: 'string' }
                   - { name: 'url', label: 'Url', widget: 'string' }
+      - name: 'header'
+        label: 'Header'
+        file: 'src/_data/header.json'
+        fields:
+          - name: 'brandTitle'
+            label: 'Brand Title'
+            widget: 'string'
+          - name: 'nav'
+            label: 'Navigation Bar'
+            widget: 'list'
+            fields:
+              - { name: 'label', label: 'Label', widget: 'string' }
+              - { name: 'url', label: 'Url', widget: 'string' }

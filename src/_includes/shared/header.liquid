@@ -1,44 +1,21 @@
 <header>
   <!-- Navigation-->
   <nav class="navbar navbar-expand-md navbar-light" id="mainNav">
-    <a class="navbar-brand" href="#">Rooster World</a
-    ><button
-      class="navbar-toggler"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
-      aria-controls="navbarResponsive"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      onclick="toggleNav()"
-    >
+    <a class="navbar-brand" href="#">{{header.brandTitle}}</a>
+    <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" onclick="toggleNav()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive" #mainNav>
+    <div #mainNav class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto my-2">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://blog.rooster-world.com/"> Blog</a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="btn btn-outline-primary"
-            href="https://shop.rooster-world.com/"
-          >
-            <i class="fas fa-shopping-cart mr-1"></i>
-            Shop</a
-          >
-        </li>
+        {% for item in header.nav %}
+          <li class="nav-item">
+            <a class="{% if item.icon %} btn btn-outline-primary {% else %} nav-link {% endif %}" href="{{item.url}}">
+              {% if item.icon %}
+                <i class="fas {{item.icon}} mr-1"></i>
+              {% endif %}
+              {{item.label}}</a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
