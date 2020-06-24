@@ -84,3 +84,17 @@ collections:
             fields:
               - { name: 'author', label: 'Author', widget: 'string' }
               - { name: 'url', label: 'Url', widget: 'string' }
+  - name: 'settings'
+    label: 'App Settings'
+    files:
+      - name: 'settings'
+        label: 'Settings'
+        file: 'src/_data/settings.json'
+        fields:
+          - name: 'theme'
+            label: 'Themes'
+            widget: 'select'
+            options:
+              - { label: 'Default', value: 'default' }
+              - { label: 'Dark', value: 'dark' }
+            default: ['default']
