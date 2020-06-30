@@ -1,29 +1,22 @@
 <!-- Footer -->
 <footer class="footer-area">
   <div class="container">
-    <div class="">
-      <div class="site-logo text-center py-4">
-        <!-- <a href="#"
-          ><img src="../../../assets/imgs/rooster.png" width="60px" alt="logo"
-        /></a> -->
-      </div>
-      <div class="social text-center">
-        <h5 class="text-uppercase">{{footer.title}}</h5>
-        {% for item in footer.socials %}
-          <a href="{{item.url}}">
-            <i class="{{item.icon}}"></i>
-          </a>
-        {% endfor %}
-      </div>
-      <div class="copyrights text-center">
-        <p class="para">
-          {{footer.copyRight}}
-          | Made by
-          <a href="{{footer.madeBy.url}}">
-            <span style="color: var(--primary-color);">{{footer.madeBy.author}}</span>
-          </a>
-        </p>
-      </div>
+    <h5 class="text-uppercase text-center">{{footer.title}}</h5>
+    <div class="social text-center">
+      {% for item in footer.socials %}
+        <a href="{{item.url}}">
+          <i class="{{item.icon}}"></i>
+        </a>
+      {% endfor %}
+    </div>
+    <div class="copyrights text-center">
+      <p class="para">
+        {{footer.copyRight}}
+        | Made by
+        <a href="{{footer.madeBy.url}}">
+          <span style="color: var(--primary-color);">{{footer.madeBy.author}}</span>
+        </a>
+      </p>
     </div>
   </div>
 </footer>

@@ -11,7 +11,7 @@ const HeaderPreview = createClass({
       );
     });
 
-    return h('nav', { className: 'navbar navbar-expand-md navbar-light' }, [
+    return h('nav', { className: 'navbar navbar-expand-sm navbar-light' }, [
       h('a', { className: 'navbar-brand' }, title),
       h(
         'div',

@@ -1,20 +1,32 @@
 <header>
   <!-- Navigation-->
   <nav class="navbar navbar-expand-md navbar-light" id="mainNav">
-    <a class="navbar-brand" href="#">{{header.brandTitle}}</a>
-    <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" onclick="toggleNav()">
+    <a class="navbar-brand" href="#">{{ header.brandTitle }}</a>
+    <button
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      class="navbar-toggler"
+      data-target="#navbarResponsive"
+      data-toggle="collapse"
+      onclick="toggleNav()"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div #mainNav class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto my-2">
         {% for item in header.nav %}
-          <li class="nav-item">
-            <a class="{% if item.icon %} btn btn-outline-primary {% else %} nav-link {% endif %}" href="{{item.url}}">
-              {% if item.icon %}
-                <i class="fas {{item.icon}} mr-1"></i>
-              {% endif %}
-              {{item.label}}</a>
-          </li>
+        <li class="nav-item">
+          <a
+            class="{% if item.icon %} btn btn-outline-primary {% else %} nav-link {% endif %}"
+            href="{{ item.url }}"
+          >
+            {% if item.icon %}
+            <i class="fas {{ item.icon }} mr-1"></i>
+            {% endif %}
+            {{ item.label }}</a
+          >
+        </li>
         {% endfor %}
       </ul>
     </div>
