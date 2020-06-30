@@ -4,9 +4,16 @@ backend:
 media_folder: 'assets/img'
 
 collections:
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'home'
+    label: 'Home'
     files:
+      - label: 'About'
+        name: 'about'
+        file: 'src/_data/sections/about.json'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
+          - { label: 'Button Text', name: 'buttonText', widget: 'string' }
       - label: 'Home Page'
         name: 'homePage'
         file: 'src/index.md'
