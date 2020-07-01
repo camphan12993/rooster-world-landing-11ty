@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+.btn {
+  border-radius: 1px;
+}
+
+@tailwind utilities;
