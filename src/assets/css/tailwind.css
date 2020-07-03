@@ -1,0 +1,13 @@
+/* @tailwind base; */
+
+/* @tailwind components; */
+
+.btn {
+  border-radius: 12px;
+}
+
+.test {
+  color: red;
+}
+
+/* @tailwind utilities; */
