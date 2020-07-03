@@ -2,13 +2,13 @@ var currentIndex = -1;
 
 function changeSlide(index) {
   currentIndex = index;
-  var slides = document.getElementsByClassName('mySlides');
+  var slides = document.getElementsByClassName('slide');
   clearClass(slides, 'active');
   slides[index].classList.add('active');
 
   var dots = document.getElementsByClassName('dot');
-  clearClass(dots, 'active');
-  dots[index].classList.add('active');
+  clearClass(dots, 'bg-gray-800');
+  dots[index].classList.add('bg-gray-800');
 }
 
 function clearClass(elements, name) {
@@ -18,23 +18,16 @@ function clearClass(elements, name) {
 }
 
 function autoPlay() {
-  var length = document.getElementsByClassName('mySlides').length;
+  var length = document.getElementsByClassName('slide').length;
   currentIndex = (currentIndex + 1) % length;
   changeSlide(currentIndex);
   setTimeout(autoPlay, 5000);
 }
 
 function toggleNav() {
-  var mainNav = document.getElementById('navbarResponsive');
-  mainNav.classList.toggle('show');
+  var mainNav = document.getElementById('nav-menu');
+  mainNav.classList.toggle('hidden');
 }
 window.onload = function () {
   autoPlay();
 };
-
-window.addEventListener('resize', function (e) {
-  if (window.innerWidth >= 768) {
-    var mainNav = document.getElementById('navbarResponsive');
-    mainNav.classList.remove('show');
-  }
-});

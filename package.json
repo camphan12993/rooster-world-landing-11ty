@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/style.css --watch",
+    "watch:css": "postcss src/assets/tailwind/tailwind.css -o src/assets/css/style.css --watch",
     "watch:eleventy": "eleventy --serve",
-    "css": "postcss src/assets/css/tailwind.css -o src/assets/style.css",
+    "css": "postcss src/assets/tailwind/tailwind.css -o src/assets/css/style.css",
     "dev": "npm-run-all --parallel watch:*",
     "build": "npm run css && eleventy"
   },

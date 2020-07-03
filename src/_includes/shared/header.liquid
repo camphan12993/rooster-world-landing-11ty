@@ -1,32 +1,19 @@
 <header>
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-md navbar-light" id="mainNav">
-    <a class="navbar-brand" href="#">{{ header.brandTitle }}</a>
-    <button
-      aria-controls="navbarResponsive"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      class="navbar-toggler"
-      data-target="#navbarResponsive"
-      data-toggle="collapse"
-      onclick="toggleNav()"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div #mainNav class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto my-2">
+  <nav class="flex items-center justify-between flex-wrap p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <span class="font-semibold text-xl tracking-tight text-blue-800">{{ header.brandTitle }}</span>
+    </div>
+    <div class="block md:hidden">
+      <button onclick="toggleNav()" class="flex items-center p-1 border rounded text-blue-800 border-blue-800 hover:text-blue-600 hover:border-blue-600">
+        <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.4 9H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1z"/></svg>
+      </button>
+    </div>
+    <div class="w-full hidden flex-grow md:flex md:items-center md:w-auto md:justify-end" id="nav-menu">
+      <div class="text-sm">
         {% for item in header.nav %}
-        <li class="nav-item">
-          <a
-            class="{% if item.icon %} btn btn-outline-primary {% else %} nav-link {% endif %}"
-            href="{{ item.url }}"
-          >
-            {% if item.icon %}
-            <i class="fas {{ item.icon }} mr-1"></i>
-            {% endif %}
-            {{ item.label }}</a
-          >
-        </li>
+        <a href="{{ item.url }}" class="block mt-4 md:inline-block md:mt-0 text-blue-800 hover:text-blue-600 mr-4">
+          {{ item.label }}</a>
+        </a>
         {% endfor %}
       </ul>
     </div>
