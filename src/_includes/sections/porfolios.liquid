@@ -1,24 +1,20 @@
-<section class="content-section" id="portfolio">
-  <div class="container">
-    <div class="content-section-heading text-center">
-      <h3 class="text-secondary mb-0">Portfolio</h3>
-      <h2 class="mb-5">Recent Projects</h2>
-    </div>
+<section class="section">
+  <div class="container mx-auto">
+    <h3 class="section-title">Portfolio</h3>
+    <h2 class="section-subtitle">Recent Projects</h2>
     <div class="row no-gutters">
       {% for item in portfolios %}
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="{{ item.link.url }}">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>{{ item.name }}</h2>
-                <p class="mb-0">
-                  {{ item.description }}
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="{{ item.image }}" alt=""/>
-          </a>
-        </div>
+        <a class="portfolio block relative overflow-hidden" href="{{ item.link.url }}">
+          <div class="captain absolute w-full h-full text-white p-4 flex flex-col justify-center items-center z-10 bg-blue-600">
+            <h3>{{ item.name }}</h3>
+            <p class="mb-0">
+              {{ item.description }}
+            </p>
+          </div>
+          <div class="relative pb-2/3">
+            <img class="absolute w-full h-full object-cover object-center" src="{{ item.image }}" alt=""/>
+          </div>
+        </a>
       {% endfor %}
     </div>
   </div>

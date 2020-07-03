@@ -608,6 +608,20 @@ video {
 
 /* global */
 
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -619,6 +633,8 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
+/* button */
 
 .btn {
   font-weight: 700;
@@ -644,6 +660,42 @@ h3 {
   background-color: rgba(43, 108, 176, var(--bg-opacity));
 }
 
+.btn-xl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* section */
+
+section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* text */
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  --text-opacity: 1;
+  color: #d69e2e;
+  color: rgba(214, 158, 46, var(--text-opacity));
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.section-subtitle {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
 /* banner */
 
 .slide {
@@ -653,6 +705,27 @@ h3 {
 
 .slide.active {
   opacity: 1;
+}
+
+/* portfolio */
+
+.portfolio .captain,
+.portfolio img {
+  transition: all 0.2s;
+  clip-path: inset(0);
+}
+
+.portfolio:hover .captain,
+.portfolio:hover img {
+  clip-path: inset(2rem);
+}
+
+.portfolio .captain {
+  --bg-opacity: 0.25;
+}
+
+.portfolio:hover .captain {
+  --bg-opacity: 0.5;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
