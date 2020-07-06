@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update
-media_folder: 'assets/img'
+media_folder: 'src/assets/img'
 
 collections:
   - name: 'home'

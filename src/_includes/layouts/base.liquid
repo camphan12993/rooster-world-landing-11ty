@@ -9,17 +9,12 @@
     <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"/>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="assets/js/main.js"></script>
+
+    {% capture js %}
+      {% include js/main.js %}
+    {% endcapture %}
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
-        });
-      }
+      {{ js | jsmin | safe }}
     </script>
   </head>
   <body>
