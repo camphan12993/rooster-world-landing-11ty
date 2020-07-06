@@ -7,4 +7,4 @@ CMS.registerPreviewTemplate('about', About);
 CMS.registerPreviewStyle(
   'https://use.fontawesome.com/releases/v5.13.0/css/all.css'
 );
-CMS.registerPreviewStyle('/assets/css/styles.css');
+CMS.registerPreviewStyle('/assets/css/style.css');
