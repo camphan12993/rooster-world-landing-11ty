@@ -35,6 +35,9 @@ module.exports = {
       inset: percentageUnit,
       translate: percentageUnit,
       minWidth: percentageUnit,
+      fontSize: {
+        '7xl': '5rem',
+      },
     },
     container: {
       center: true,

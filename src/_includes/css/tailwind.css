@@ -65,17 +65,31 @@ h3 {
 }
 /* section */
 .section {
-  @apply py-24 px-6;
+  @apply py-12 px-6;
+}
+
+@screen md {
+  .section {
+    @apply py-24 px-6;
+  }
 }
 
 /* text */
 .section-title {
-  @apply text-2xl text-center text-yellow-600 mb-2 uppercase font-semibold tracking-widest;
+  @apply text-xl text-center text-yellow-600 mb-2 uppercase font-semibold tracking-widest;
 }
 
 .section-subtitle {
-  font-size: 3rem;
-  @apply mb-16 text-center font-light tracking-wide font-semibold;
+  @apply text-3xl mb-8 text-center font-light tracking-wide font-semibold;
+}
+
+@screen md {
+  .section-title {
+    @apply text-2xl;
+  }
+  .section-subtitle {
+    @apply text-5xl  mb-16;
+  }
 }
 
 /* banner */
