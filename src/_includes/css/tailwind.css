@@ -88,6 +88,9 @@ h3 {
   opacity: 1;
 }
 
+.dot.active {
+  @apply bg-blue-800;
+}
 /* portfolio */
 .portfolio .captain,
 .portfolio img {

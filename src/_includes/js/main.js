@@ -7,8 +7,8 @@ function changeSlide(index) {
   slides[index].classList.add('active');
 
   var dots = document.getElementsByClassName('dot');
-  clearClass(dots, 'bg-gray-800');
-  dots[index].classList.add('bg-gray-800');
+  clearClass(dots, 'active');
+  dots[index].classList.add('active');
 }
 
 function clearClass(elements, name) {
