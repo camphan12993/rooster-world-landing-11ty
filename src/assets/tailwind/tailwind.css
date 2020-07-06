@@ -1,0 +1,108 @@
+@tailwind base;
+
+@tailwind components;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* global */
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply text-2xl;
+}
+
+/* button */
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-primary {
+  @apply bg-blue-800 text-white;
+}
+
+.btn-primary:hover {
+  @apply bg-blue-700;
+}
+.btn-secondary {
+  @apply bg-yellow-600 text-white;
+}
+
+.btn-secondary:hover {
+  @apply bg-yellow-500;
+}
+.btn-xl {
+  @apply px-6 py-4;
+}
+
+/* form */
+#contactForm input,
+#contactForm textarea {
+  @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-5 px-4 leading-tight mb-1;
+}
+
+#contactForm input:hover,
+#contactForm textarea:hover {
+  @apply outline-none bg-white border-gray-500;
+}
+/* section */
+.section {
+  @apply py-24 px-6;
+}
+
+/* text */
+.section-title {
+  @apply text-2xl text-center text-yellow-600 mb-2 uppercase font-semibold tracking-widest;
+}
+
+.section-subtitle {
+  font-size: 3rem;
+  @apply mb-16 text-center font-light tracking-wide font-semibold;
+}
+
+/* banner */
+.slide {
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* portfolio */
+.portfolio .captain,
+.portfolio img {
+  transition: all 0.2s;
+  clip-path: inset(0);
+}
+.portfolio:hover .captain,
+.portfolio:hover img {
+  clip-path: inset(1rem);
+}
+.portfolio .captain {
+  @apply bg-opacity-25;
+}
+.portfolio:hover .captain {
+  @apply bg-opacity-50;
+}
+
+@tailwind utilities;
