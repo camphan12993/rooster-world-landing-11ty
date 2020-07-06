@@ -1,17 +1,17 @@
-<section class="content-section bg-blue-800" id="services">
-  <div class="container mx-auto py-6 px-4 text-white text-center">
+<section class="section bg-blue-800" id="services">
+  <div class="container text-white text-center">
     <div class="content-section-heading">
       <h3 class="section-title">Services</h3>
       <h2 class="section-subtitle">What We Offer</h2>
     </div>
-    <div class="row">
+    <div class="flex flex-wrap">
       {% for item in services %}
-        <div class="mb-5">
-          <div class="service-item w-1/3 pb-1/3 relative rounded-full overflow-hidden mx-auto mb-3">
+        <div class="w-full md:w-1/2 mb-10 lg:w-1/4 md:px-4">
+          <div class="service-item w-1/2 pb-1/2 lg:w-3/4 lg:pb-3/4 relative rounded-full overflow-hidden mx-auto mb-5">
             <img src="{{ item.image }}" alt="" class="transform transition duration-300 absolute w-full h-full object-cover object-center hover:scale-110">
           </div>
-          <h4>
-            <strong>{{ item.name }}</strong>
+          <h4 class="text-xl">
+            {{item.name}}
           </h4>
         </div>
       {% endfor %}

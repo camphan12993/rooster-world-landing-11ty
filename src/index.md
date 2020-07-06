@@ -17,7 +17,25 @@ services:
 portfolios:
   - link:
       text: hihi
-      url: "#"
+      url: '#'
+    name: sdfsdaf
+    image: /assets/img/3d-printing.jpg
+    description: sdfsdafasdfsdf
+  - link:
+      text: hihi
+      url: '#'
+    name: sdfsdaf
+    image: /assets/img/3d-printing.jpg
+    description: sdfsdafasdfsdf
+  - link:
+      text: hihi
+      url: '#'
+    name: sdfsdaf
+    image: /assets/img/3d-printing.jpg
+    description: sdfsdafasdfsdf
+  - link:
+      text: hihi
+      url: '#'
     name: sdfsdaf
     image: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf

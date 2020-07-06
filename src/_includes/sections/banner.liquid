@@ -1,20 +1,20 @@
-<section class="site-banner container mx-auto py-8 px-6">
-  <div class="site-title mb-10">
-    <h3 class="text-4xl">Welcome to</h3>
-    <h1 class="text-uppercase my-2" style="font-size: 5rem">Rooster World</h1>
+<section class="site-banner container py-8 md:flex md:items-center md:py-32 lg:py-24 xl:py-10">
+  <div class="site-title mb-10 md:w-1/2">
+    <h3 class="text-4xl font-bold">Welcome to</h3>
+    <h1 class="uppercase my-6 font-bold" style="font-size: 4.5rem">Rooster World</h1>
     <hr class="w-40 border-solid border-4 rounded border-gray-600"/>
   </div>
-  <div class="slideshow-container relative">
-    <div class="relative m-6" style="padding-bottom: 80%;">
+  <div class="slideshow-container relative md:w-1/2">
+    <div class="relative m-6 pb-full">
       {% for item in banners %}
         <!-- <div class="mySlides faded" id="slide" style="background-image: url('{{ item }}')"></div> -->
         <img alt="" src="{{item}}" class="slide absolute h-full w-full object-contain object-center">
       {% endfor %}
     </div>
 
-    <div class="nav-dots flex justify-center">
+    <div class="transform nav-dots flex justify-center md:absolute md:flex-col md:top-1/2 md:right-0 md:-translate-y-1/2">
       {% for banner in banners %}
-        <span class="dot block w-4 h-4 bg-gray-600 rounded-full mx-1 hover:bg-gray-800 transition ease-out duration-200" onclick="changeSlide('{{ forloop.index0 }}')"></span>
+        <span class="dot block w-4 h-4 bg-gray-600 rounded-full mx-1 hover:bg-gray-800 transition ease-out duration-200 md:my-1" onclick="changeSlide('{{ forloop.index0 }}')"></span>
       {% endfor %}
     </div>
   </div>
