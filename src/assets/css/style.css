@@ -660,11 +660,62 @@ h3 {
   background-color: rgba(43, 108, 176, var(--bg-opacity));
 }
 
+.btn-secondary {
+  --bg-opacity: 1;
+  background-color: #d69e2e;
+  background-color: rgba(214, 158, 46, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.btn-secondary:hover {
+  --bg-opacity: 1;
+  background-color: #ecc94b;
+  background-color: rgba(236, 201, 75, var(--bg-opacity));
+}
+
 .btn-xl {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+/* form */
+
+#contactForm input,
+#contactForm textarea {
+  appearance: none;
+  display: block;
+  width: 100%;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+  border-radius: 0.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.25;
+}
+
+#contactForm input:hover,
+#contactForm textarea:hover {
+  outline: 0;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --border-opacity: 1;
+  border-color: #a0aec0;
+  border-color: rgba(160, 174, 192, var(--border-opacity));
 }
 
 /* section */

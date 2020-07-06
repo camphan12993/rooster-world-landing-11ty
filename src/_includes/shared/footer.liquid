@@ -1,11 +1,11 @@
 <!-- Footer -->
-<footer class="footer-area">
-  <div class="container">
-    <h5 class="text-uppercase text-center">{{footer.title}}</h5>
-    <div class="social text-center">
+<footer class="footer-area py-12">
+  <div class="container mx-auto">
+    <h5 class="uppercase text-center text-2xl">{{footer.title}}</h5>
+    <div class="flex justify-center my-3">
       {% for item in footer.socials %}
-        <a href="{{item.url}}">
-          <i class="{{item.icon}}"></i>
+        <a href="{{item.url}}" class="block p-6">
+          <i class="{{item.icon}} text-2xl hover:opacity-75"></i>
         </a>
       {% endfor %}
     </div>
