@@ -1,3 +1,6 @@
+import htm from 'https://unpkg.com/htm?module';
+const html = htm.bind(h);
+
 const Footer = createClass({
   render: function () {
     var entry = this.props.entry;
@@ -9,30 +12,38 @@ const Footer = createClass({
     var url = entry.getIn(['data', 'madeBy', 'url']);
     var socials = this.props.widgetsFor('socials');
 
-    var socialIcons = socials.map((item) => {
-      return h(
-        'a',
-        { href: item.getIn(['data', 'url']) },
-        h('i', { className: item.getIn(['data', 'icon']) })
-      );
-    });
-
-    return h(
-      'footer',
-      { className: 'footer-area' },
-      h('div', { className: 'container' }, [
-        h('h5', { className: 'text-uppercase text-center' }, title),
-        h('div', { className: 'social text-center' }, socialIcons),
-        h(
-          'div',
-          { className: 'copyrights text-center' },
-          h('p', { className: 'para' }, [
-            copyRight + ' | Made by ',
-            h('a', { href: url }, h('span', {}, author)),
-          ])
-        ),
-      ])
-    );
+    return html`
+      <footer class="footer-area py-10 md:py-18">
+        <div class="container mx-auto">
+          <h5 class="uppercase text-center text-2xl text-blue-900">${title}</h5>
+          <div class="flex justify-center my-3 text-blue-900">
+            ${socials.map(
+              (item) => html`
+                <a
+                  href="${item.getIn(['data', 'url'])}"
+                  class="block p-6 md:px-10"
+                >
+                  <i
+                    class="${item.getIn([
+                      'data',
+                      'icon',
+                    ])} text-2xl hover:opacity-75"
+                  ></i>
+                </a>
+              `
+            )}
+          </div>
+          <div class="copyrights text-center text-blue-900">
+            <p class="para">
+              ${copyRight} | Made by
+              <a href="${url}">
+                <b> ${author}</b>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    `;
   },
 });
 

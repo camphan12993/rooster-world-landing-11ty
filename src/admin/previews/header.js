@@ -1,24 +1,33 @@
+import htm from 'https://unpkg.com/htm?module';
+const html = htm.bind(h);
+
 const HeaderPreview = createClass({
   render: function () {
     var entry = this.props.entry;
     var title = entry.getIn(['data', 'brandTitle']);
-    var navItems = this.props.widgetsFor('nav');
-    var nav = navItems.map((item) => {
-      return h(
-        'li',
-        { className: 'nav-item' },
-        h('a', { className: 'nav-link' }, item.getIn(['data', 'label']))
-      );
-    });
 
-    return h('nav', { className: 'navbar navbar-expand-sm navbar-light' }, [
-      h('a', { className: 'navbar-brand' }, title),
-      h(
-        'div',
-        { className: 'collapse navbar-collapse' },
-        h('ul', { className: 'navbar-nav ml-auto my-2' }, nav)
-      ),
-    ]);
+    return html`
+      <header>
+      <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight text-blue-800">${title}</span>
+        </div>
+        <div class="flex-grow flex items-center w-auto justify-end" id="nav-menu">
+            ${this.props
+              .widgetsFor('nav')
+              .map(
+                (item) => html`
+                  <a
+                    href="${item.getIn(['data', 'url'])}"
+                    class="block text-blue-800 hover:text-blue-600 mr-4"
+                  >
+                    ${item.getIn(['data', 'label'])}</a
+                  >
+                `
+              )}
+      </nav>
+    </header>
+    `;
   },
 });
 

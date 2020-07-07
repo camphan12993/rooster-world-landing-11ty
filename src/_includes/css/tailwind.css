@@ -29,6 +29,13 @@ h3 {
   @apply text-2xl;
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* button */
 
 .btn {
