@@ -80,7 +80,7 @@ collections:
             widget: 'list'
             fields:
               - { name: 'name', label: 'Name', widget: 'string' }
-              - { name: 'icon', label: 'Icon', widget: 'string' }
+              - { name: 'icon', label: 'Icon', widget: 'image' }
               - { name: 'url', label: 'Url', widget: 'string' }
           - name: 'copyRight'
             label: 'Copy Right'

@@ -1,12 +1,14 @@
 const terser = require('terser');
 const htmlmin = require('html-minifier');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const svgContents = require('eleventy-plugin-svg-contents');
 
 module.exports = function (config) {
   // config.addPassthroughCopy('assets');
   config.addPassthroughCopy('src/admin');
   config.addPassthroughCopy('src/assets/css');
   config.addPassthroughCopy('src/assets/img');
+  config.addPlugin(svgContents);
   config.addPlugin(lazyImagesPlugin, {
     transformImgPath: (imgPath) => {
       if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
