@@ -23,12 +23,7 @@ const Footer = createClass({
                   href="${item.getIn(['data', 'url'])}"
                   class="block p-6 md:px-10"
                 >
-                  <i
-                    class="${item.getIn([
-                      'data',
-                      'icon',
-                    ])} text-2xl hover:opacity-75"
-                  ></i>
+                  <img src="${item.getIn(['data', 'icon'])}" class="w-8 h-8" />
                 </a>
               `
             )}
