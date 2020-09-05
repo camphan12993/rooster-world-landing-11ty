@@ -1,3 +1,8 @@
+:root {
+  --color-primary: #ffc93b;
+  --color-secondary: #2e4059;
+}
+
 @tailwind base;
 
 @tailwind components;
@@ -43,11 +48,11 @@ img {
 }
 
 .btn-primary {
-  @apply bg-blue-800 text-white;
+  @apply bg-primary text-white transition-opacity duration-100;
 }
 
 .btn-primary:hover {
-  @apply bg-blue-700;
+  @apply opacity-75;
 }
 .btn-secondary {
   @apply bg-yellow-600 text-white;
@@ -83,7 +88,7 @@ img {
 
 /* text */
 .section-title {
-  @apply text-xl text-center text-yellow-600 mb-2 uppercase font-semibold tracking-widest;
+  @apply text-xl text-center text-primary mb-2 uppercase font-semibold tracking-widest;
 }
 
 .section-subtitle {
@@ -97,6 +102,26 @@ img {
   .section-subtitle {
     @apply text-5xl  mb-16;
   }
+}
+
+/* nav */
+.nav-item {
+  position: relative;
+}
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-primary);
+  left: 0;
+  bottom: -4px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.nav-item:hover::after {
+  opacity: 1;
 }
 
 /* banner */

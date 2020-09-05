@@ -1,16 +1,16 @@
 <header>
   <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tight text-blue-800">{{ header.brandTitle }}</span>
+      <span class="font-semibold text-xl tracking-tight text-blue-800"><img class="h-5 w-auto" src="{{ header.brandTitle }}"></span>
     </div>
     <div class="block md:hidden">
       <button class="flex items-center p-1 border rounded text-blue-800 border-blue-800 hover:text-blue-600 hover:border-blue-600" onclick="toggleNav()">
         <svg class="fill-current w-6 h-6" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M16.4 9H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1z"/></svg>
       </button>
     </div>
-    <div class="w-full hidden flex-grow md:flex md:items-center md:w-auto md:justify-end" id="nav-menu">
+    <div class="w-full hidden items-start justify-start md:flex md:items-center md:w-auto md:justify-end" id="nav-menu">
       {% for item in header.nav %}
-        <a href="{{ item.url }}" class="block mt-4 md:inline-block md:mt-0 text-blue-800 hover:text-blue-600 mr-4">
+        <a href="{{ item.url }}" class="nav-item block mt-4 md:inline-block md:mt-0 text-secondary mr-4">
           {{ item.label }}
         </a>
       {% endfor %}

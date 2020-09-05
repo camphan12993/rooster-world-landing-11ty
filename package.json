@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:css": "postcss src/_includes/css/tailwind.css -o src/assets/css/style.css --watch",
     "watch:eleventy": "eleventy --serve",
-    "css": "postcss src/_includes/css/tailwind.css -o src/assets/css/style.css",
-    "dev": "npm-run-all --parallel watch:*",
-    "build": "npm run css && eleventy"
+    "build": "eleventy"
   },
   "author": "",
   "license": "ISC",

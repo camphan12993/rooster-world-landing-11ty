@@ -2,6 +2,8 @@ const terser = require('terser');
 const htmlmin = require('html-minifier');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const svgContents = require('eleventy-plugin-svg-contents');
+const postcss = require('postcss')
+const postcssConfig = require('./postcss.config');
 
 module.exports = function (config) {
   // config.addPassthroughCopy('assets');
@@ -18,6 +20,12 @@ module.exports = function (config) {
       return imgPath;
     },
   });
+
+  config.addPairedShortcode(
+    "postcss",
+    async function(code) {
+    return await postcss(postcssConfig.plugins).process(code).then(result => result.css)
+});
 
   // minify js
   config.addFilter('jsmin', function (code) {

@@ -38,6 +38,10 @@ module.exports = {
       fontSize: {
         '7xl': '5rem',
       },
+      colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+      }
     },
     container: {
       center: true,

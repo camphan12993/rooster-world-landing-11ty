@@ -6,7 +6,11 @@
     <title>{{ title }}</title>
     <link href="assets/css/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"/>
-
+      <style>
+      {% postcss %}
+        {% include css/tailwind.css %}
+      {% endpostcss %}
+    </style> 
     {% capture js %}
       {% include js/main.js %}
     {% endcapture %}
