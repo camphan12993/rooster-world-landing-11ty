@@ -2,7 +2,7 @@
 title: Welcome to Rooster World
 layout: layouts/home.liquid
 banners:
-  - /assets/img/toy.png
+  - /assets/img/cover.png
   - /assets/img/toy2.png
   - /assets/img/toy3.png
 services:
@@ -17,25 +17,25 @@ services:
 portfolios:
   - link:
       text: hihi
-      url: '#'
+      url: "#"
     name: sdfsdaf
     image: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
   - link:
       text: hihi
-      url: '#'
+      url: "#"
     name: sdfsdaf
     image: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
   - link:
       text: hihi
-      url: '#'
+      url: "#"
     name: sdfsdaf
     image: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
   - link:
       text: hihi
-      url: '#'
+      url: "#"
     name: sdfsdaf
     image: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf

@@ -1,19 +1,20 @@
-const terser = require('terser');
-const htmlmin = require('html-minifier');
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-const svgContents = require('eleventy-plugin-svg-contents');
-const postcss = require('postcss')
-const postcssConfig = require('./postcss.config');
+const terser = require("terser");
+const htmlmin = require("html-minifier");
+const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
+const svgContents = require("eleventy-plugin-svg-contents");
+const postcss = require("postcss");
+const postcssConfig = require("./postcss.config");
+const path = require("path");
 
 module.exports = function (config) {
   // config.addPassthroughCopy('assets');
-  config.addPassthroughCopy('src/admin');
-  config.addPassthroughCopy('src/assets/css');
-  config.addPassthroughCopy('src/assets/img');
+  config.addPassthroughCopy("src/admin");
+  config.addPassthroughCopy("src/assets/css");
+  config.addPassthroughCopy("src/assets/img");
   config.addPlugin(svgContents);
   config.addPlugin(lazyImagesPlugin, {
     transformImgPath: (imgPath) => {
-      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
+      if (imgPath.startsWith("/") && !imgPath.startsWith("//")) {
         return `./src${imgPath}`;
       }
 
@@ -21,17 +22,18 @@ module.exports = function (config) {
     },
   });
 
-  config.addPairedShortcode(
-    "postcss",
-    async function(code) {
-    return await postcss(postcssConfig.plugins).process(code).then(result => result.css)
-});
+  config.addPairedShortcode("postcss", async function (code) {
+    const filepath = path.join(__dirname, "src/_includes/css/tailwind.css");
+    return await postcss(postcssConfig.plugins)
+      .process(code, { from: filepath })
+      .then((result) => result.css);
+  });
 
   // minify js
-  config.addFilter('jsmin', function (code) {
+  config.addFilter("jsmin", function (code) {
     let minified = terser.minify(code);
     if (minified.error) {
-      console.log('Terser error: ', minified.error);
+      console.log("Terser error: ", minified.error);
       return code;
     }
 
@@ -39,9 +41,9 @@ module.exports = function (config) {
   });
 
   // html minify
-  if (process.env.NODE_ENV == 'production') {
-    config.addTransform('htmlmin', function (content, outputPath) {
-      if (outputPath.endsWith('.html')) {
+  if (process.env.NODE_ENV == "production") {
+    config.addTransform("htmlmin", function (content, outputPath) {
+      if (outputPath.endsWith(".html")) {
         let minified = htmlmin.minify(content, {
           useShortDoctype: true,
           removeComments: true,
@@ -56,11 +58,11 @@ module.exports = function (config) {
 
   return {
     dir: {
-      input: 'src',
+      input: "src",
     },
     passthroughFileCopy: true,
-    templateFormats: ['html', 'liquid', 'md'],
-    htmlTemplateEngine: 'liquid',
-    markdownTemplateEngine: 'liquid',
+    templateFormats: ["html", "liquid", "md"],
+    htmlTemplateEngine: "liquid",
+    markdownTemplateEngine: "liquid",
   };
 };
