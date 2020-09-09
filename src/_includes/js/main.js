@@ -1,61 +1,28 @@
-var currentIndex = -1;
+function initSlides() {
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 
-function changeSlide(index) {
-  currentIndex = index;
-  var inner = document.getElementById("banner-inner");
-  inner.style.marginLeft = `-${currentIndex * 100}%`;
-  setActiveDot(currentIndex);
-}
-
-function clearClass(elements, name) {
-  for (let index = 0; index < elements.length; index++) {
-    elements[index].classList.remove(name);
-  }
-}
-
-function autoPlay() {
-  navRight();
-  // setTimeout(autoPlay, 10000);
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 }
 
 function toggleMenu() {
   var mainNav = document.getElementById("nav-menu");
   mainNav.classList.toggle("active");
-}
-function setBannerWith() {
-  var inner = document.getElementById("banner-inner");
-  var slides = document.getElementsByClassName("slide-item");
-  inner.style.width = `${slides.length * 100}%`;
-  for (let index = 0; index < slides.length; index++) {
-    const slide = slides[index];
-    slide.style.flexBasis = `${100 / slides.length}%`;
-  }
-}
-
-function navLeft() {
-  var length = document.getElementsByClassName("slide-item").length;
-  var inner = document.getElementById("banner-inner");
-  if (currentIndex == 0) {
-    currentIndex = length - 1;
-  } else {
-    currentIndex -= 1;
-  }
-  inner.style.marginLeft = `-${currentIndex * 100}%`;
-  setActiveDot(currentIndex);
-}
-
-function navRight() {
-  var length = document.getElementsByClassName("slide-item").length;
-  var inner = document.getElementById("banner-inner");
-  currentIndex = (currentIndex + 1) % length;
-  inner.style.marginLeft = `-${currentIndex * 100}%`;
-  setActiveDot(currentIndex);
-}
-
-function setActiveDot(index) {
-  var dots = document.getElementsByClassName("dot");
-  clearClass(dots, "active");
-  dots[index].classList.add("active");
+  el = document.createElement("div");
+  el.className = "";
 }
 
 function toggleSocialMenu() {
@@ -64,8 +31,15 @@ function toggleSocialMenu() {
 }
 
 window.onload = function () {
-  setBannerWith();
-  autoPlay();
+  initSlides();
+};
+
+window.onresize = function () {
+  var menu = document.getElementById("social-menu");
+  menu.classList.remove("active");
+
+  var mainNav = document.getElementById("nav-menu");
+  mainNav.classList.remove("active");
 };
 
 window.onclick = function (e) {

@@ -19,6 +19,7 @@
     "eleventy-plugin-svg-contents": "^0.7.0",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^7.1.1",
+    "swiper": "^6.2.0",
     "tailwindcss": "^1.4.6",
     "terser": "^4.8.0"
   },

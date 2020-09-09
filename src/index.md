@@ -19,24 +19,40 @@ portfolios:
       text: hihi
       url: "#"
     name: sdfsdaf
-    image: /assets/img/3d-printing.jpg
+    thumnail: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
+    imgs:
+      - /assets/img/cover.png
+      - /assets/img/toy2.png
+      - /assets/img/toy3.png
   - link:
       text: hihi
       url: "#"
     name: sdfsdaf
-    image: /assets/img/3d-printing.jpg
+    thumnail: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
+    imgs:
+      - /assets/img/cover.png
+      - /assets/img/toy2.png
+      - /assets/img/toy3.png
   - link:
       text: hihi
       url: "#"
     name: sdfsdaf
-    image: /assets/img/3d-printing.jpg
+    thumnail: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
+    imgs:
+      - /assets/img/cover.png
+      - /assets/img/toy2.png
+      - /assets/img/toy3.png
   - link:
       text: hihi
       url: "#"
     name: sdfsdaf
-    image: /assets/img/3d-printing.jpg
+    thumnail: /assets/img/3d-printing.jpg
     description: sdfsdafasdfsdf
+    imgs:
+      - /assets/img/cover.png
+      - /assets/img/toy2.png
+      - /assets/img/toy3.png
 ---

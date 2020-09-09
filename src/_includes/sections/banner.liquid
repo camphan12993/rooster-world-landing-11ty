@@ -1,31 +1,31 @@
-<section class="site-banner mb-20 px-8">
+<section class="site-banner px-4 sm:px-8">
   <div class="container">
-    <div class="banner-wrapper w-full rounded-lg overflow-hidden relative">
-      <div class="flex transition-margin duration-500" id="banner-inner">
-        {% for item in banners %}
-          <div class="slide-item relative flex-shrink-0 flex-grow-0" style="background-image: url({{item}})">
-            <div class="overlay-filter absolute w-full h-full"></div>
-            <div class="absolute bottom-0 w-full">
-              <div class="m-auto px-0 pb-12" style="max-width: 80%">
-                <h1 class="uppercase mb-4 font-bold text-6xl md:text-5xl text-white text-opacity-100">Rooster World</h1>
+      <div class="swiper-container rounded-lg relative">
+        <div class="swiper-wrapper">
+          {% for item in banners %}
+            <div class="swiper-slide relative" style="background-image: url({{item}})">
+              <div class="overlay-filter absolute w-full h-full"></div>
+              <div class="absolute bottom-0 w-full">
+                <div class="relative px-0 pl-10 mx-4 sm:mx-10 pb-16 lg:mx-32 ">
+                  <div class="slide-icon absolute border-white border-opacity-25 border-r left-0 pr-4 flex items-center justify-center">
+                    <span class="text-white text-opacity-75">
+                      <svg aria-hidden="true" data-prefix="fas" data-icon="cube" class="w-6 md:w-8 svg-inline--fa fa-cube fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M239.1 6.3l-208 78c-18.7 7-31.1 25-31.1 45v225.1c0 18.2 10.3 34.8 26.5 42.9l208 104c13.5 6.8 29.4 6.8 42.9 0l208-104c16.3-8.1 26.5-24.8 26.5-42.9V129.3c0-20-12.4-37.9-31.1-44.9l-208-78C262 2.2 250 2.2 239.1 6.3zM256 68.4l192 72v1.1l-192 78-192-78v-1.1l192-72zm32 356V275.5l160-65v133.9l-160 80z"/></svg>
+                    </span>
+                  </div>
+                  <div class="pl-4 md:pl-6">
+                    <h3 class="text-primary text-sm md:text-lg uppercase text-sha lg:text-xl mb-1">Subtitle</h3>
+                    <h1 class="relative slide-title uppercase font-bold text-lg sm:text-2xl md:text-3xl lg:text-5xl text-white">
+                    Rooster World Rooster World Rooster World Rooster World</h1>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        {% endfor %}
-      </div>
-      <div class="absolute left-0 right-0" style="bottom: 50px">
-        <div class=" nav-dots flex flex-row justify-end items-center mx-6 md:mx-12 lg:mx-32">
-          {% for banner in banners %}
-            <span class="dot block w-3 h-3 bg-white opacity-50 rounded-full mx-1 hover:opacity-100 transition ease-out duration-200" onclick="changeSlide('{{ forloop.index0 }}')"></span>
           {% endfor %}
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="hidden sm:block swiper-button-prev text-gray-200"></div>
+        <div class="hidden sm:block swiper-button-next text-gray-200"></div>
       </div>
-      <div onclick="navLeft()" class="absolute top-1/2 w-5 transform -translate-y-1/2 transition opacity-50 duration-200 text-white hover:opacity-100" style="left: 10px">
-        <svg aria-hidden="true" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
-      </div>
-      <div onclick="navRight()" class="absolute top-1/2 w-5 transform -translate-y-1/2 transition opacity-50 duration-200 text-white hover:opacity-100" style="right: 10px">
-        <svg aria-hidden="true" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>      </div>
-    </div>
   </div>
   
 </section>

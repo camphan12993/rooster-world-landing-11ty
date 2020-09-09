@@ -88,20 +88,11 @@ img {
 
 /* text */
 .section-title {
-  @apply text-xl text-center text-primary mb-2 uppercase font-semibold tracking-widest;
+  @apply text-3xl text-center text-secondary mb-2 uppercase font-semibold tracking-widest;
 }
 
 .section-subtitle {
-  @apply text-3xl mb-8 text-center font-light tracking-wide font-semibold;
-}
-
-@screen md {
-  .section-title {
-    @apply text-2xl;
-  }
-  .section-subtitle {
-    @apply text-5xl  mb-16;
-  }
+  @apply text-lg mb-10 text-center text-gray-500 font-light tracking-wide;
 }
 
 /* background */
@@ -112,14 +103,13 @@ img {
 
 /* menu */
 .overlay-menu {
-  backdrop-filter: blur(6px);
   background-color: white;
   opacity: 0;
   animation: fading 0.5s;
 }
 
 .overlay-menu.active {
-  opacity: 0.8;
+  opacity: 0.9;
   display: block;
 }
 
@@ -140,33 +130,72 @@ img {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 /* banner */
-.dot.active {
-  opacity: 1;
-}
-
 .overlay-filter {
   backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.slide-item {
+.swiper-slide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 320px;
   background-color: white;
-  opacity: 1;
+}
+
+.slide-icon {
+  top: 23px;
+  bottom: 68px;
+}
+
+.swiper-container {
+  height: 320px;
+}
+.swiper-pagination-bullet {
+  @apply bg-gray-200;
+}
+
+@screen sm {
+  .slide-icon {
+    top: 25px;
+    bottom: 68px;
+  }
 }
 
 @screen md {
-  .slide-item {
+  .swiper-container {
     height: 540px;
   }
+
+  .slide-icon {
+    top: 30px;
+    bottom: 72px;
+  }
+}
+
+@screen lg {
+  .slide-icon {
+    top: 37px;
+    bottom: 75px;
+  }
+}
+
+/* services */
+.service-item {
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-out;
+  will-change: transform;
+  height: 100%;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
 }
 
 /* portfolio */
@@ -184,6 +213,32 @@ img {
 }
 .portfolio:hover .captain {
   @apply bg-opacity-50;
+}
+
+.swiper-gallery {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-gallery .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-gallery .swiper-pagination-bullet-active {
+  @apply text-white bg-gray-400;
+}
+
+.swiper-gallery .swiper-pagination-bullet {
+  @apply text-white;
 }
 
 @tailwind utilities;

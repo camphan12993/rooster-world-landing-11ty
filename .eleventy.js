@@ -11,6 +11,13 @@ module.exports = function (config) {
   config.addPassthroughCopy("src/admin");
   config.addPassthroughCopy("src/assets/css");
   config.addPassthroughCopy("src/assets/img");
+  config.addPassthroughCopy({
+    "node_modules/swiper/swiper-bundle.css": "assets/css/swiper-bundle.css",
+  });
+  config.addPassthroughCopy({
+    "node_modules/swiper/swiper-bundle.min.js":
+      "assets/js/swiper-bundle.min.js",
+  });
   config.addPlugin(svgContents);
   config.addPlugin(lazyImagesPlugin, {
     transformImgPath: (imgPath) => {
