@@ -1,7 +1,7 @@
 {
   "banners": [
     {
-      "image": "/src/assets/img/portfolio-1.jpg",
+      "image": "/assets/img/web-service.jpeg",
       "icon": "/src/assets/img/cube-solid.svg",
       "subtitle": "3D",
       "title": "This is a test"
