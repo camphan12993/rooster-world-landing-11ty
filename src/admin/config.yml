@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Banner"
         name: "banners"
-        file: "src/_includes/sections/banner.liquid"
+        file: "src/_data/sections/banner.json"
         fields:
           - label: "Banners"
             name: "banners"
@@ -27,6 +27,17 @@ collections:
               - name: "title"
                 label: "Title"
                 widget: "string"
+      - label: "Services"
+        name: "services"
+        widget: "list"
+        file: "src/_data/sections/services.json"
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "image"
       - label: "About"
         name: "about"
         file: "src/_data/sections/about.json"
@@ -34,62 +45,39 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Sub Title", name: "subTitle", widget: "string" }
           - { label: "Button Text", name: "buttonText", widget: "string" }
-      - label: "Home Page"
+      - label: "Portfolios"
+        name: "portfolios"
+        file: "src/_data/sections/portfolios.json"
+        widget: "list"
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "thumnail"
+            label: "Thumnail"
+            widget: "image"
+          - name: "description"
+            label: "Description"
+            widget: "string"
+          - label: "Images"
+            name: "imgs"
+            widget: "list"
+            field: { label: "Galery", name: "slide", widget: "image" }
+          - name: "image"
+            label: "Slide"
+            widget: "image"
+          - name: "link"
+            label: "Link"
+            widget: "object"
+            fields:
+              - { name: "text", label: "Text", widget: "string" }
+              - { name: "url", label: "Url", widget: "string" }
+      - label: "Meta"
         name: "homePage"
         file: "src/index.md"
         fields:
-          - label: "Banners"
-            name: "banners"
-            widget: "list"
-            fields:
-              - name: "image"
-                label: "Slide"
-                widget: "image"
-              - name: "icon"
-                label: "Icon"
-                widget: "image"
-              - name: "subtitle"
-                label: "Sub Title"
-                widget: "string"
-              - name: "title"
-                label: "Title"
-                widget: "string"
-          - label: "Services"
-            name: "services"
-            widget: "list"
-            fields:
-              - name: "name"
-                label: "Name"
-                widget: "string"
-              - name: "image"
-                label: "Image"
-                widget: "image"
-          - label: "Portfolios"
-            name: "portfolios"
-            widget: "list"
-            fields:
-              - name: "name"
-                label: "Name"
-                widget: "string"
-              - name: "thumnail"
-                label: "Thumnail"
-                widget: "image"
-              - name: "description"
-                label: "Description"
-                widget: "string"
-              - label: "Images"
-                name: "imgs"
-                widget: "list"
-                field: { label: "Galery", name: "slide", widget: "image" }
-              - name: "image"
-                label: "Slide"
-                widget: "image"
-              - name: "link"
-                label: "Link"
-                widget: "object"
-                fields:
-                  - { name: "text", label: "Text", widget: "string" }
-                  - { name: "url", label: "Url", widget: "string" }
+          - { name: "title", label: "Text", widget: "string" }
+
   - name: "components"
     label: "Components"
     files:
