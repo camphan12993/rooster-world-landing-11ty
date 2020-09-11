@@ -7,6 +7,26 @@ collections:
   - name: "home"
     label: "Home"
     files:
+      - label: "Banner"
+        name: "banners"
+        file: "src/_includes/sections/banner.liquid"
+        fields:
+          - label: "Banners"
+            name: "banners"
+            widget: "list"
+            fields:
+              - name: "image"
+                label: "Slide"
+                widget: "image"
+              - name: "icon"
+                label: "Icon"
+                widget: "image"
+              - name: "subtitle"
+                label: "Sub Title"
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                widget: "string"
       - label: "About"
         name: "about"
         file: "src/_data/sections/about.json"
@@ -60,10 +80,7 @@ collections:
               - label: "Images"
                 name: "imgs"
                 widget: "list"
-                fields:
-                  - name: "img"
-                    widget: "image"
-                    label: "Image"
+                field: { label: "Galery", name: "slide", widget: "image" }
               - name: "image"
                 label: "Slide"
                 widget: "image"
