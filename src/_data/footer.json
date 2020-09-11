@@ -1,29 +1,29 @@
 {
-  "title": "Connect with us!",
-  "socials": [
-    {
-      "name": "facebook",
-      "url": "https://www.facebook.com/phcnolimit",
-      "icon": "/src/assets/img/youtube-brands.svg"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/camphan12993",
-      "icon": "/src/assets/img/youtube-brands.svg"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/CamPhanHuynh1",
-      "icon": "/src/assets/img/youtube-brands.svg"
-    },
-    {
-      "name": "youtube",
-      "icon": "/src/assets/img/youtube-brands.svg"
-    }
-  ],
-  "copyRight": "Copyright ©2020 All rights reserved",
-  "madeBy": {
-    "author": "Cam Phan",
-    "url": "#"
-  }
+	"title": "Connect with us!",
+	"socials": [
+		{
+			"name": "facebook",
+			"url": "https://www.facebook.com/phcnolimit",
+			"icon": "/assets/img/youtube-brands.svg"
+		},
+		{
+			"name": "github",
+			"url": "https://github.com/camphan12993",
+			"icon": "/assets/img/youtube-brands.svg"
+		},
+		{
+			"name": "twitter",
+			"url": "https://twitter.com/CamPhanHuynh1",
+			"icon": "/assets/img/youtube-brands.svg"
+		},
+		{
+			"name": "youtube",
+			"icon": "/assets/img/youtube-brands.svg"
+		}
+	],
+	"copyRight": "Copyright ©2020 All rights reserved",
+	"madeBy": {
+		"author": "Cam Phan",
+		"url": "#"
+	}
 }

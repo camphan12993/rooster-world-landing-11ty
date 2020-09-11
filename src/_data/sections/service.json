@@ -1,0 +1,24 @@
+{
+	"services": [
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "3D Printing",
+			"icon": "/assets/img/cube-solid.svg"
+		},
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "3D Printing",
+			"icon": "/assets/img/cube-solid.svg"
+		},
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "3D Printing",
+			"icon": "/assets/img/cube-solid.svg"
+		},
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "3D Printing",
+			"icon": "/assets/img/cube-solid.svg"
+		}
+	]
+}

@@ -5,7 +5,7 @@
     <div class="flex justify-center my-3 text-blue-900">
       {% for item in footer.socials %}
         <a href="{{item.url}}" class="block p-6 md:px-10 text-blue-800 hover:text-blue-700">
-          {{ item.icon | svgContents:"w-6 h-6" }}
+          {{ item.icon | | prepend: '/src' | svgContents:"w-6 h-6" }}
         </a>
       {% endfor %}
     </div>

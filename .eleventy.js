@@ -36,7 +36,7 @@ module.exports = function (config) {
 		options: {
 			titleDivider: "|",
 		},
-		image: "/assets/img/cover.png",
+		image: "/assets/img/cover.jpg",
 	});
 
 	config.addLiquidFilter("toJson", function (value) {

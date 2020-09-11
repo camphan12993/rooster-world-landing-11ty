@@ -31,7 +31,7 @@ collections:
       - label: "Services"
         name: "services"
         widget: "list"
-        file: "src/_data/sections/services.json"
+        file: "src/_data/sections/service.json"
         fields:
           - name: "name"
             label: "Name"
@@ -48,7 +48,7 @@ collections:
           - { label: "Button Text", name: "buttonText", widget: "string" }
       - label: "Portfolios"
         name: "portfolios"
-        file: "src/_data/sections/portfolios.json"
+        file: "src/_data/sections/portfolio.json"
         widget: "list"
         fields:
           - name: "name"

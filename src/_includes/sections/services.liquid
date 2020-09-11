@@ -9,16 +9,16 @@
       <h3 class="section-title">Choose your products</h3>
       <p class="section-subtitle">
         From logo design to website designs and developers are ready to complete
-                perfect your custom jobs
+                                                                        perfect your custom jobs
       </p>
     </div>
     <div class="flex flex-wrap justify-center">
-      {% for item in services %}
+      {% for item in sections.service.services %}
         <div class="w-full md:w-1/2 mb-10 md:px-4 md:max-w-lg">
           <div class="service-item p-10">
             <div class="text-center mb-4">
-              <span class="inline-block w-6 p-3 rounded-full bg-primary text-white">
-                {{ item.icon | svgContents }}
+              <span class="inline-block rounded-full bg-primary text-white">
+                {{ item.icon | prepend: '/src' | svgContents : "w-6 m-3" }}
               </span>
             </div>
             <h4 class="text-xl uppercase font-bold text-secondary text-center mb-2">
