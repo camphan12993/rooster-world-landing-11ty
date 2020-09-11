@@ -1,29 +1,33 @@
 {
-  "name": "rooster-world-landing-11ty",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:eleventy": "eleventy --serve",
-    "build": "eleventy"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "autoprefixer": "^9.8.4",
-    "cssnano": "^4.1.10",
-    "eleventy-plugin-lazyimages": "^1.1.2",
-    "eleventy-plugin-svg-contents": "^0.7.0",
-    "html-minifier": "^4.0.0",
-    "postcss-cli": "^7.1.1",
-    "swiper": "^6.2.0",
-    "tailwindcss": "^1.4.6",
-    "terser": "^4.8.0"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
-  }
+	"name": "rooster-world-landing-11ty",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch:html": "eleventy --serve",
+		"build:html": "eleventy",
+		"watch:css": "postcss src/assets/css/index.css -d _site/assets/css -w",
+		"build:css": "postcss src/assets/css/index.css -d _site/assets/css",
+		"start": "npm-run-all --parallel watch:*",
+		"build": "npm-run-all --parallel build:*"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@11ty/eleventy": "^0.11.0",
+		"@fullhuman/postcss-purgecss": "^2.3.0",
+		"autoprefixer": "^9.8.4",
+		"cssnano": "^4.1.10",
+		"eleventy-plugin-lazyimages": "^1.1.2",
+		"eleventy-plugin-svg-contents": "^0.7.0",
+		"html-minifier": "^4.0.0",
+		"postcss-cli": "^7.1.1",
+		"swiper": "^6.2.0",
+		"tailwindcss": "^1.4.6",
+		"terser": "^4.8.0"
+	},
+	"devDependencies": {
+		"npm-run-all": "^4.1.5"
+	}
 }

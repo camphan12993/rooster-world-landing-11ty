@@ -1,106 +1,117 @@
 backend:
   name: git-gateway
   branch: master # Branch to update
-media_folder: 'src/assets/img'
+media_folder: "src/assets/img"
 
 collections:
-  - name: 'home'
-    label: 'Home'
+  - name: "home"
+    label: "Home"
     files:
-      - label: 'About'
-        name: 'about'
-        file: 'src/_data/sections/about.json'
+      - label: "About"
+        name: "about"
+        file: "src/_data/sections/about.json"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
-          - { label: 'Button Text', name: 'buttonText', widget: 'string' }
-      - label: 'Home Page'
-        name: 'homePage'
-        file: 'src/index.md'
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Sub Title", name: "subTitle", widget: "string" }
+          - { label: "Button Text", name: "buttonText", widget: "string" }
+      - label: "Home Page"
+        name: "homePage"
+        file: "src/index.md"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - label: 'Banners'
-            name: 'banners'
-            widget: 'list'
-            field: { label: 'Slide', name: 'slide', widget: 'image' }
-          - label: 'Services'
-            name: 'services'
-            widget: 'list'
+          - label: "Banners"
+            name: "banners"
+            widget: "list"
             fields:
-              - name: 'name'
-                label: 'Name'
-                widget: 'string'
-              - name: 'image'
-                label: 'Image'
-                widget: 'image'
-          - label: 'Portfolios'
-            name: 'portfolios'
-            widget: 'list'
+              - name: "image"
+                label: "Slide"
+                widget: "image"
+              - name: "icon"
+                label: "Icon"
+                widget: "image"
+              - name: "subtitle"
+                label: "Sub Title"
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                widget: "string"
+          - label: "Services"
+            name: "services"
+            widget: "list"
             fields:
-              - name: 'name'
-                label: 'Name'
-                widget: 'string'
-              - name: 'image'
-                label: 'Image'
-                widget: 'image'
-              - name: 'description'
-                label: 'Description'
-                widget: 'string'
-              - name: 'link'
-                label: 'Link'
-                widget: 'object'
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "image"
+                label: "Image"
+                widget: "image"
+          - label: "Portfolios"
+            name: "portfolios"
+            widget: "list"
+            fields:
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "image"
+                label: "Image"
+                widget: "image"
+              - name: "description"
+                label: "Description"
+                widget: "string"
+              - name: "link"
+                label: "Link"
+                widget: "object"
                 fields:
-                  - { name: 'text', label: 'Text', widget: 'string' }
-                  - { name: 'url', label: 'Url', widget: 'string' }
-  - name: 'components'
-    label: 'Components'
+                  - { name: "text", label: "Text", widget: "string" }
+                  - { name: "url", label: "Url", widget: "string" }
+  - name: "components"
+    label: "Components"
     files:
-      - name: 'header'
-        label: 'Header'
-        file: 'src/_data/header.json'
+      - name: "header"
+        label: "Header"
+        file: "src/_data/header.json"
         fields:
-          - name: 'brandTitle'
-            label: 'Brand Title'
-            widget: 'string'
-          - name: 'nav'
-            label: 'Navigation Bar'
-            widget: 'list'
+          - name: "brandTitle"
+            label: "Brand Title"
+            widget: "string"
+          - name: "nav"
+            label: "Navigation Bar"
+            widget: "list"
             fields:
-              - { name: 'label', label: 'Label', widget: 'string' }
-              - { name: 'url', label: 'Url', widget: 'string' }
-      - name: 'footer'
-        label: 'Footer'
-        file: 'src/_data/footer.json'
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "Url", widget: "string" }
+      - name: "footer"
+        label: "Footer"
+        file: "src/_data/footer.json"
         fields:
-          - name: 'title'
-            label: 'Title'
-            widget: 'string'
-          - name: 'socials'
-            label: 'Social Item'
-            widget: 'list'
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "socials"
+            label: "Social Item"
+            widget: "list"
             fields:
-              - { name: 'name', label: 'Name', widget: 'string' }
-              - { name: 'icon', label: 'Icon', widget: 'image' }
-              - { name: 'url', label: 'Url', widget: 'string' }
-          - name: 'copyRight'
-            label: 'Copy Right'
-            widget: 'string'
-          - name: 'madeBy'
-            label: 'Made By'
-            widget: 'object'
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "image" }
+              - { name: "url", label: "Url", widget: "string" }
+          - name: "copyRight"
+            label: "Copy Right"
+            widget: "string"
+          - name: "madeBy"
+            label: "Made By"
+            widget: "object"
             fields:
-              - { name: 'author', label: 'Author', widget: 'string' }
-              - { name: 'url', label: 'Url', widget: 'string' }
-  - name: 'settings'
-    label: 'App Settings'
+              - { name: "author", label: "Author", widget: "string" }
+              - { name: "url", label: "Url", widget: "string" }
+  - name: "settings"
+    label: "App Settings"
     files:
-      - name: 'settings'
-        label: 'Settings'
-        file: 'src/_data/settings.json'
+      - name: "settings"
+        label: "Settings"
+        file: "src/_data/settings.json"
         fields:
-          - name: 'theme'
-            label: 'Theme'
-            widget: 'select'
+          - name: "theme"
+            label: "Theme"
+            widget: "select"
             options:
-              - { label: 'Default', value: 'default' }
-              - { label: 'Dark', value: 'dark' }
+              - { label: "Default", value: "default" }
+              - { label: "Dark", value: "dark" }

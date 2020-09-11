@@ -4,20 +4,10 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>{{ title }}</title>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <link href="assets/css/swiper-bundle.css" rel="stylesheet"/>
+    <link href="/assets/css/swiper-bundle.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"/>
-      <style>
-      {% postcss %}
-        {% include css/tailwind.css %}
-      {% endpostcss %}
-    </style> 
-    {% capture js %}
-      {% include js/main.js %}
-    {% endcapture %}
-    <script>
-      {{ js | jsmin | safe }}
-    </script>
+    <link href="/assets/css/index.css" rel="stylesheet"/>
+    <script src="/assets/js/swiper-bundle.min.js" type="text/javascript"></script>
   </head>
   <body>
     {% include shared/header %}
@@ -25,7 +15,6 @@
       {{ content | safe }}
     </main>
     {% include shared/footer %}
+    <script src="/assets/js/main.js" type="text/javascript"></script>
   </body>
-</html>
-  </head>
 </html>

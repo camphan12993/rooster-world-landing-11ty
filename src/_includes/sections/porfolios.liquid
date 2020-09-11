@@ -2,15 +2,20 @@
   <div class="container">
     <div class="content-section-heading">
       <div class="text-center text-primary mb-6">
-        <svg aria-hidden="true" data-prefix="fas" data-icon="briefcase" class="inline-block w-12 svg-inline--fa fa-briefcase fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"/></svg>      </div>
+        <svg aria-hidden="true" class="inline-block w-12 svg-inline--fa fa-briefcase fa-w-16" data-icon="briefcase" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z" fill="currentColor"/>
+        </svg>
+      </div>
       <h3 class="section-title">Our Works</h3>
-      <p class="section-subtitle">From logo design to website designs and developers are ready to complete perfect your custom jobs</p>
+      <p class="section-subtitle">
+        From logo design to website designs and developers are ready to complete
+      </p>
     </div>
     <div class="flex flex-wrap">
       {% for item in portfolios %}
-        <a onclick="toggleGallery('{{forloop.index0}}')" class="cursor-pointer portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0">
+        <a class="cursor-pointer portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0" onclick="toggleGallery('{{ item.imgs }}')">
           <div class="captain absolute w-full h-full text-white p-4 flex flex-col justify-center items-center z-10 bg-blue-600">
-            <h3>{{ item.name }}</h3>
+            <h3 class="text-3xl">{{ item.name }}</h3>
             <p class="mb-0">
               {{ item.description }}
             </p>
@@ -22,59 +27,20 @@
       {% endfor %}
     </div>
   </div>
-  <div class="fixed inset-0 hidden" style="z-index:99999; background: rgba(0,0,0,0.6)" id="gallery">
-    <div class="p-16 h-full w-full">
-        <span class="absolute w-6 text-gray-500 hover:opacity-75" style="top:1rem; right:1rem" onclick="closeGallery()">
-          <svg aria-hidden="true" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
-        </span>
-        <div class="swiper-gallery">
-          <div class="swiper-wrapper" id="swiper-wrapper">
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <div class="hidden sm:block swiper-button-prev text-gray-200"></div>
-          <div class="hidden sm:block swiper-button-next text-gray-200"></div>
-        </div>
+  <div class="fixed inset-0 hidden" id="gallery" style="z-index: 99999; background: rgba(0, 0, 0, 0.6)">
+    <div class="p-8 md:p-16 h-full w-full flex items-center justify-center">
+      <span class="top-0 right-0 m-4 absolute w-3 md:w-6 text-gray-500 hover:opacity-75" onclick="closeGallery()">
+        <svg aria-hidden="true" class="svg-inline--fa fa-times fa-w-11" data-icon="times" data-prefix="fas" viewbox="0 0 352 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor"/>
+        </svg>
+      </span>
+      <div class="swiper-gallery h-1/2 sm:h-2/3 md:h-4/5 w-full overflow-hidden relative">
+        <div class="swiper-wrapper" id="swiper-wrapper"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-gallery-pagination"></div>
+        <div class="hidden sm:block swiper-gallery-button-prev text-gray-200"></div>
+        <div class="hidden sm:block swiper-gallery-button-next text-gray-200"></div>
+      </div>
     </div>
   </div>
 </section>
-<script>
-  var mySwiperGallery = new Swiper(".swiper-gallery", {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
-    },
-  });
-  function toggleGallery(i) {
-    document.getElementById('gallery').classList.toggle('hidden');
-    var imgs = {{portfolios}}[parseInt(i, 10)].imgs;
-    for (let index = 0; index < imgs.length; index++) {
-      var slide = `<div class="swiper-slide" style="background-image: url('${imgs[index]}')"></div>`;
-      mySwiperGallery.appendSlide(slide);
-    }
-  }
-
-  function closeGallery() {
-    document.getElementById('gallery').classList.toggle('hidden');
-    mySwiperGallery.removeAllSlides();
-  }
-</script>
