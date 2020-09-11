@@ -3,11 +3,17 @@ title: Welcome to Rooster World
 layout: layouts/home.liquid
 banners:
   - image: /assets/img/cover.png
-    icon:
-    subtitle:
-    title:
+    icon: /src/assets/img/cube-solid.svg
+    subtitle: "3D "
+    title: 3D projects
   - image: /assets/img/toy2.png
+    icon: /src/assets/img/cube-solid.svg
+    subtitle: Test
+    title: Test
   - image: /assets/img/toy3.png
+    icon: /src/assets/img/cube-solid.svg
+    subtitle: Tes6t
+    title: test
 services:
   - image: /assets/img/3d-printing.jpg
     name: 3D Printing
@@ -28,6 +34,7 @@ portfolios:
       - /assets/img/cover.png
       - /assets/img/toy2.png
       - /assets/img/toy3.png
+    image: /src/assets/img/3d-printing.jpg
   - link:
       text: hihi
       url: "#"
@@ -38,6 +45,7 @@ portfolios:
       - /assets/img/cover.png
       - /assets/img/toy2.png
       - /assets/img/toy3.png
+    image: /src/assets/img/bg-masthead.jpg
   - link:
       text: hihi
       url: "#"
@@ -48,6 +56,7 @@ portfolios:
       - /assets/img/cover.png
       - /assets/img/toy2.png
       - /assets/img/toy3.png
+    image: /src/assets/img/cover.png
   - link:
       text: hihi
       url: "#"
@@ -58,4 +67,5 @@ portfolios:
       - /assets/img/cover.png
       - /assets/img/toy2.png
       - /assets/img/toy3.png
+    image: /src/assets/img/bg-callout.jpg
 ---
