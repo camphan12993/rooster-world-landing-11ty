@@ -12,7 +12,7 @@
       </p>
     </div>
     <div class="flex flex-wrap">
-      {% for item in section.portfolio.portfolios %}
+      {% for item in sections.portfolio.portfolios %}
         <a class="cursor-pointer portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0" onclick="toggleGallery()">
           <div class="captain absolute w-full h-full text-white p-4 flex flex-col justify-center items-center z-10 bg-blue-600">
             <h3 class="text-3xl">{{ item.name }}</h3>
