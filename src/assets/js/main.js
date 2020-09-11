@@ -18,8 +18,31 @@ function initSlides() {
 	});
 }
 
-function toggleGallery(i) {
-	console.log(i);
+var mySwiperGallery = new Swiper(".swiper-gallery", {
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		},
+	},
+});
+
+function handleGallery(imgs) {
+	document.getElementById("gallery").classList.toggle("hidden");
+	for (let index = 0; index < imgs.length; index++) {
+		var slide = `<div class="swiper-slide" style="background-image: url('${imgs[index]}')"></div>`;
+		mySwiperGallery.appendSlide(slide);
+	}
+}
+function closeGallery() {
+	document.getElementById("gallery").classList.toggle("hidden");
+	mySwiperGallery.removeAllSlides();
 }
 
 function toggleMenu() {

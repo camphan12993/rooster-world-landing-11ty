@@ -13,7 +13,7 @@
     </div>
     <div class="flex flex-wrap">
       {% for item in sections.portfolio.portfolios %}
-        <a class="cursor-pointer portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0" onclick="toggleGallery()">
+        <a class="cursor-pointer portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0" onclick="toggleGallery('{{forloop.index0}}')">
           <div class="captain absolute w-full h-full text-white p-4 flex flex-col justify-center items-center z-10 bg-blue-600">
             <h3 class="text-3xl">{{ item.name }}</h3>
             <p class="mb-0">
@@ -37,10 +37,17 @@
       <div class="swiper-gallery h-1/2 sm:h-2/3 md:h-4/5 w-full overflow-hidden relative">
         <div class="swiper-wrapper" id="swiper-wrapper"></div>
         <!-- Add Pagination -->
-        <div class="swiper-gallery-pagination"></div>
-        <div class="hidden sm:block swiper-gallery-button-prev text-gray-200"></div>
-        <div class="hidden sm:block swiper-gallery-button-next text-gray-200"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev text-gray-200"></div>
+        <div class="swiper-button-next text-gray-200"></div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  function toggleGallery(i) {
+    var imgs = {{sections}}.portfolio.portfolios[parseInt(i, 10)].galleryImages;
+    handleGallery({{sections.portfolio.portfolios}}[parseInt(i, 10)].galleryImages);
+  }
+</script>

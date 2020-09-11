@@ -78,7 +78,7 @@ module.exports = function (config) {
 			input: "src",
 		},
 		passthroughFileCopy: true,
-		templateFormats: ["html", "liquid", "md"],
+		templateFormats: ["html", "liquid", "md", "11ty.js"],
 		htmlTemplateEngine: "liquid",
 		markdownTemplateEngine: "liquid",
 	};
