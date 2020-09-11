@@ -10,7 +10,7 @@
 		"watch:css": "postcss src/assets/css/index.css -d _site/assets/css -w",
 		"build:css": "postcss src/assets/css/index.css -d _site/assets/css",
 		"start": "npm-run-all --parallel watch:*",
-		"build": "npm-run-all --parallel build:*"
+		"build": "npm run build:css && npm run build:html"
 	},
 	"author": "",
 	"license": "ISC",
