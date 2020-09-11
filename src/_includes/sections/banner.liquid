@@ -2,7 +2,8 @@
   <div class="container">
     <div class="swiper-container rounded-lg relative">
       <div class="swiper-wrapper">
-        {% for item in banners %}
+        {{banner}}
+        {% for item in sections.banner.banners %}
           <div class="swiper-slide relative" style="background-image: url({{item.image}})">
             <div class="overlay-filter absolute w-full h-full"></div>
             <div class="absolute bottom-0 w-full">

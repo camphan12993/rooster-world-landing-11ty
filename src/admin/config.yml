@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update
 media_folder: "src/assets/img"
+public_folder: "/assets/img"
 
 collections:
   - name: "home"
@@ -35,8 +36,8 @@ collections:
           - name: "name"
             label: "Name"
             widget: "string"
-          - name: "image"
-            label: "Image"
+          - name: "icon"
+            label: "Icon"
             widget: "image"
       - label: "About"
         name: "about"
