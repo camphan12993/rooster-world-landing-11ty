@@ -60,13 +60,11 @@ collections:
           - name: "description"
             label: "Description"
             widget: "string"
-          - label: "Images"
-            name: "imgs"
+          - label: "Gallery"
+            name: "galleryImages"
             widget: "list"
-            field: { label: "Galery", name: "slide", widget: "image" }
-          - name: "image"
-            label: "Slide"
-            widget: "image"
+            summary: "{{fields.image}}"
+            field: { label: Image, name: image, widget: image }
           - name: "link"
             label: "Link"
             widget: "object"
