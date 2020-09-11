@@ -1,0 +1,22 @@
+{
+  "banners": [
+    {
+      "image": "/src/assets/img/portfolio-1.jpg",
+      "icon": "/src/assets/img/cube-solid.svg",
+      "subtitle": "3D",
+      "title": "This is a test"
+    },
+    {
+      "image": "/src/assets/img/cover.png",
+      "icon": "/src/assets/img/cube-solid.svg",
+      "subtitle": "Design",
+      "title": "This is a Test"
+    },
+    {
+      "image": "/src/assets/img/design-service.jpg",
+      "icon": "/src/assets/img/cube-solid.svg",
+      "subtitle": "Graphic",
+      "title": "This is a test"
+    }
+  ]
+}
