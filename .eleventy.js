@@ -2,6 +2,7 @@ const terser = require("terser");
 const htmlmin = require("html-minifier");
 const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
 const svgContents = require("eleventy-plugin-svg-contents");
+const pluginSEO = require("eleventy-plugin-seo-tag");
 
 module.exports = function (config) {
 	// config.addPassthroughCopy('assets');
@@ -24,6 +25,18 @@ module.exports = function (config) {
 
 			return imgPath;
 		},
+	});
+
+	// SEO
+	config.addPlugin(pluginSEO, {
+		title: "Rooster World",
+		url: "https://rooster-world.com",
+		author: "Cam Phan",
+		description: "Rooster World",
+		options: {
+			titleDivider: "|",
+		},
+		image: "/assets/img/cover.png",
 	});
 
 	config.addLiquidFilter("toJson", function (value) {
