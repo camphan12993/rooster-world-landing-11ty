@@ -1,3 +1,14 @@
 {
-	"portpolios": []
+  "portpolios": [],
+  "galleryImages": [
+    "/assets/img/3d-printing.jpg",
+    "/assets/img/cover.png"
+  ],
+  "link": {
+    "text": "Link ne",
+    "url": "#"
+  },
+  "thumnail": "/assets/img/design-service.jpg",
+  "name": "This is a test",
+  "description": "Test"
 }
