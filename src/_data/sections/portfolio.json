@@ -10,5 +10,20 @@
   },
   "thumnail": "/assets/img/design-service.jpg",
   "name": "This is a test",
-  "description": "Test"
+  "description": "Test",
+  "portfolios": [
+    {
+      "name": "Test",
+      "thumnail": "/assets/img/bg-callout.jpg",
+      "description": "Test",
+      "galleryImages": [
+        "/assets/img/design-service.jpg",
+        "/assets/img/cover.png"
+      ],
+      "link": {
+        "text": "test",
+        "url": "test"
+      }
+    }
+  ]
 }
