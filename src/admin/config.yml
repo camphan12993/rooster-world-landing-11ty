@@ -9,7 +9,7 @@ collections:
     label: "Home"
     files:
       - label: "Banner"
-        name: "banners"
+        name: "banner"
         file: "src/_data/sections/banner.json"
         fields:
           - label: "Banners"
@@ -29,16 +29,19 @@ collections:
                 label: "Title"
                 widget: "string"
       - label: "Services"
-        name: "services"
-        widget: "list"
+        name: "service"
         file: "src/_data/sections/service.json"
         fields:
-          - name: "name"
-            label: "Name"
-            widget: "string"
-          - name: "icon"
-            label: "Icon"
-            widget: "image"
+          - name: "services"
+            label: "Service"
+            widget: "list"
+            fields:
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "icon"
+                label: "Icon"
+                widget: "image"
       - label: "About"
         name: "about"
         file: "src/_data/sections/about.json"
@@ -47,36 +50,38 @@ collections:
           - { label: "Sub Title", name: "subTitle", widget: "string" }
           - { label: "Button Text", name: "buttonText", widget: "string" }
       - label: "Portfolios"
-        name: "portfolios"
+        name: "portfolio"
         file: "src/_data/sections/portfolio.json"
-        widget: "list"
         fields:
-          - name: "name"
-            label: "Name"
-            widget: "string"
-          - name: "thumnail"
-            label: "Thumnail"
-            widget: "image"
-          - name: "description"
-            label: "Description"
-            widget: "string"
-          - label: "Gallery"
-            name: "galleryImages"
+          - name: "portfolios"
             widget: "list"
-            summary: "{{fields.image}}"
-            field: { label: Image, name: image, widget: image }
-          - name: "link"
-            label: "Link"
-            widget: "object"
+            label: "Portfolios"
             fields:
-              - { name: "text", label: "Text", widget: "string" }
-              - { name: "url", label: "Url", widget: "string" }
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "thumnail"
+                label: "Thumnail"
+                widget: "image"
+              - name: "description"
+                label: "Description"
+                widget: "string"
+              - label: "Gallery"
+                name: "galleryImages"
+                widget: "list"
+                summary: "{{fields.image}}"
+                field: { label: Image, name: image, widget: image }
+              - name: "link"
+                label: "Link"
+                widget: "object"
+                fields:
+                  - { name: "text", label: "Text", widget: "string" }
+                  - { name: "url", label: "Url", widget: "string" }
       - label: "Meta"
         name: "homePage"
         file: "src/index.md"
         fields:
           - { name: "title", label: "Text", widget: "string" }
-
   - name: "components"
     label: "Components"
     files:
