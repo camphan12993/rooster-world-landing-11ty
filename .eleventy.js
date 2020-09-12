@@ -36,7 +36,7 @@ module.exports = function (config) {
 			titleStyle: "minimalistic",
 			titleDivider: "|",
 		},
-		image: "/assets/img/cover.jpg",
+		image: "/assets/img/cover.png",
 	});
 
 	config.addLiquidFilter("toJson", function (value) {

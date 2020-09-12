@@ -82,6 +82,9 @@ collections:
         file: "src/index.md"
         fields:
           - { name: "title", label: "Text", widget: "string" }
+          - { name: "excerpt", label: "Description", widget: "string" }
+          - { name: "author", label: "Author", widget: "string" }
+          - { name: "image", label: "Image", widget: "image" }
   - name: "components"
     label: "Components"
     files:
