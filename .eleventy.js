@@ -8,7 +8,6 @@ module.exports = function (config) {
 	// config.addPassthroughCopy('assets');
 	config.addPassthroughCopy("src/admin");
 	config.addPassthroughCopy("src/assets/img");
-	config.addPassthroughCopy("src/assets/js");
 	config.addPassthroughCopy({
 		"node_modules/swiper/swiper-bundle.css": "assets/css/swiper-bundle.css",
 	});
@@ -30,10 +29,11 @@ module.exports = function (config) {
 	// SEO
 	config.addPlugin(pluginSEO, {
 		title: "Rooster World",
-		url: "https://rooster-world.com",
+		url: "http://rooster-world.com",
 		author: "Cam Phan",
 		description: "Rooster World",
 		options: {
+			titleStyle: "minimalistic",
 			titleDivider: "|",
 		},
 		image: "/assets/img/cover.jpg",
