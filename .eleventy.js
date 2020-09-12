@@ -29,7 +29,7 @@ module.exports = function (config) {
 	// SEO
 	config.addPlugin(pluginSEO, {
 		title: "Rooster World",
-		url: "http://rooster-world.com",
+		url: "https://rooster-world.com",
 		author: "Cam Phan",
 		description: "Rooster World",
 		options: {
