@@ -26,19 +26,6 @@ module.exports = function (config) {
 		},
 	});
 
-	// SEO
-	config.addPlugin(pluginSEO, {
-		title: "Rooster World",
-		url: "https://rooster-world.com",
-		author: "Cam Phan",
-		description: "Rooster World",
-		options: {
-			titleStyle: "minimalistic",
-			titleDivider: "|",
-		},
-		image: "/assets/img/cover.png",
-	});
-
 	config.addLiquidFilter("toJson", function (value) {
 		return JSON.stringify(value[0]);
 	});

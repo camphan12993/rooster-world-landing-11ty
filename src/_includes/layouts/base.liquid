@@ -7,7 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"/>
     <link href="/assets/css/index.css" rel="stylesheet"/>
     <script src="/assets/js/swiper-bundle.min.js" type="text/javascript"></script>
-    {% seo %}
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type">
+    <meta property="og:url" content="{{ siteUrl }}">
+    <meta property="og:site_name" content="{{ siteName }}">
+    <meta content="en_US" property="og:locale">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="{{ imgsrc | prepend: siteUrl }}">
+    <meta content="1280" property="og:image:width">
+    <meta content="640" property="og:image:height">
+    <meta property="og:image:alt" content="{{ imgAtl }}">
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card">
+    <meta property="twitter:url" content="{{ siteUrl }}">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta property="twitter:description" content="{{ description }}">
+    <meta property="twitter:image" content="{{ imgsrc }}">
+    <meta property="twitter:image:alt" content="{{ imgalt }}">
   </head>
   <body>
     {% include shared/header %}
