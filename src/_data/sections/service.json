@@ -1,24 +1,24 @@
 {
-  "services": [
-    {
-      "image": "/assets/img/3d-printing.jpg",
-      "name": "illustration",
-      "icon": "/assets/img/pen-solid.svg"
-    },
-    {
-      "image": "/assets/img/3d-printing.jpg",
-      "name": "Graphic Design",
-      "icon": "/assets/img/palette-solid.svg"
-    },
-    {
-      "image": "/assets/img/3d-printing.jpg",
-      "name": "Website",
-      "icon": "/assets/img/desktop-solid.svg"
-    },
-    {
-      "image": "/assets/img/3d-printing.jpg",
-      "name": "3D",
-      "icon": "/assets/img/cube-solid.svg"
-    }
-  ]
+	"services": [
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "illustration",
+			"icon": "/assets/img/pen-solid.svg"
+		},
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "Graphic Design",
+			"icon": "/assets/img/palette-solid.svg"
+		},
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "Website",
+			"icon": "/assets/img/desktop-solid.svg"
+		},
+		{
+			"image": "/assets/img/3d-printing.jpg",
+			"name": "3D",
+			"icon": "/assets/img/cube-solid.svg"
+		}
+	]
 }
