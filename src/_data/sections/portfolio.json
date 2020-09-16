@@ -1,24 +1,38 @@
 {
-	"portfolios": [
-		{
-			"name": "calendar 2020",
-			"thumnail": "/assets/img/img_2007.png",
-			"galleryImages": [
-				"/assets/img/chicken2.jpg",
-				"/assets/img/dalar.jpg",
-				"/assets/img/found_the_love2.jpg",
-				"/assets/img/img_1627.jpg",
-				"/assets/img/img_1683.jpg",
-				"/assets/img/img_1994.png",
-				"/assets/img/img_1995.png",
-				"/assets/img/img_1996.png",
-				"/assets/img/img_1997.jpeg",
-				"/assets/img/img_1998.png",
-				"/assets/img/img_1999.jpg",
-				"/assets/img/raining-road.jpg"
-			],
-			"description": "Studying based on Goro-Fujita's style.  ",
-			"icon": "/assets/img/pen-solid.svg"
-		}
-	]
+  "portfolios": [
+    {
+      "name": "calendar 2020",
+      "thumnail": "/assets/img/img_2007.png",
+      "galleryImages": [
+        "/assets/img/chicken2.jpg",
+        "/assets/img/dalar.jpg",
+        "/assets/img/found_the_love2.jpg",
+        "/assets/img/img_1627.jpg",
+        "/assets/img/img_1683.jpg",
+        "/assets/img/img_1994.png",
+        "/assets/img/img_1995.png",
+        "/assets/img/img_1996.png",
+        "/assets/img/img_1997.jpeg",
+        "/assets/img/img_1998.png",
+        "/assets/img/img_1999.jpg",
+        "/assets/img/raining-road.jpg"
+      ],
+      "description": "Studying based on Goro-Fujita's style.  ",
+      "icon": "/assets/img/pen-solid.svg",
+      "link": {
+        "text": "link",
+        "url": "link"
+      }
+    },
+    {
+      "name": "Coming soon page",
+      "description": "Neumorphism Design, Dark Mode, Countdown Timer",
+      "icon": "/assets/img/desktop-solid.svg",
+      "link": {
+        "text": "Url",
+        "url": "https://coming-soon-neumorphism.netlify.app/"
+      },
+      "thumnail": "/assets/img/capture.png"
+    }
+  ]
 }
