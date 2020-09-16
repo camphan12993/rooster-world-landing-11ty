@@ -9,9 +9,7 @@
             <div class="absolute bottom-0 w-full">
               <div class="relative px-0 pl-10 mx-4 sm:mx-10 pb-16 lg:mx-32 ">
                 <div class="slide-icon absolute border-white border-opacity-25 border-r left-0 pr-4 flex items-center justify-center">
-                  <span class="">
-                    {{ item.icon | prepend: '/src' | svgContents: "w-4 md:w-8 text-white text-opacity-75" }}
-                  </span>
+                  {{ item.icon | prepend: '/src' | svgContents: "w-4 md:w-8 text-white text-opacity-75" }}
                 </div>
                 <div class="pl-4 md:pl-6">
                   <h3 class="text-primary text-sm md:text-lg uppercase text-sha lg:text-xl mb-1">{{ item.subtitle }}</h3>

@@ -19,6 +19,7 @@ function initSlides() {
 }
 
 var mySwiperGallery = new Swiper(".swiper-gallery", {
+	loop: true,
 	// Navigation arrows
 	navigation: {
 		nextEl: ".swiper-button-next",
@@ -36,7 +37,7 @@ var mySwiperGallery = new Swiper(".swiper-gallery", {
 function handleGallery(imgs) {
 	document.getElementById("gallery").classList.toggle("hidden");
 	for (let index = 0; index < imgs.length; index++) {
-		var slide = `<div class="swiper-slide" style="background-image: url('${imgs[index]}')"></div>`;
+		var slide = `<div class="swiper-slide" style="background-color: rgba(0,0,0,0);"><img src="${imgs[index]}" style="height:100%;width:auto;margin:0 auto"></div>`;
 		mySwiperGallery.appendSlide(slide);
 	}
 }

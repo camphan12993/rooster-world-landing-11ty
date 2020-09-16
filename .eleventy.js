@@ -15,6 +15,13 @@ module.exports = function (config) {
 		"node_modules/swiper/swiper-bundle.min.js":
 			"assets/js/swiper-bundle.min.js",
 	});
+	config.addPassthroughCopy("android-chrome-192x192.png");
+	config.addPassthroughCopy("android-chrome-512x512.png");
+	config.addPassthroughCopy("apple-touch-icon.png");
+	config.addPassthroughCopy("favicon-16x16.png");
+	config.addPassthroughCopy("favicon-32x32.png");
+	config.addPassthroughCopy("favicon.ico");
+	config.addPassthroughCopy("site.webmanifest");
 	config.addPlugin(svgContents);
 	config.addPlugin(lazyImagesPlugin, {
 		transformImgPath: (imgPath) => {

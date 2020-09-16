@@ -202,11 +202,14 @@ img {
 .portfolio:hover img {
 	clip-path: inset(1rem);
 }
+
 .portfolio .captain {
-	@apply bg-opacity-25;
+	@apply opacity-0;
 }
+
 .portfolio:hover .captain {
-	@apply bg-opacity-50;
+	@apply opacity-100;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .swiper-gallery .swiper-pagination-bullet {
