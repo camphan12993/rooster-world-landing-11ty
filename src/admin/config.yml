@@ -66,9 +66,6 @@ collections:
               - name: "description"
                 label: "Description"
                 widget: "string"
-              - name: "icon"
-                label: "Icon"
-                widget: "image"
               - label: "Gallery"
                 required: false
                 name: "galleryImages"
