@@ -11,6 +11,12 @@
       "icon": "/assets/img/pen-solid.svg",
       "subtitle": "illustration",
       "title": "calendar 2020"
+    },
+    {
+      "image": "/assets/img/capture.png",
+      "icon": "/assets/img/desktop-solid.svg",
+      "subtitle": "Website",
+      "title": "Neumorphism Coming soon page for your incoming website"
     }
   ]
 }
