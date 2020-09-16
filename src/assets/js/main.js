@@ -2,10 +2,10 @@ function initSlides() {
 	var mySwiper = new Swiper(".swiper-container", {
 		// Optional parameters
 		loop: true,
-		// autoplay: {
-		// 	delay: 2500,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 15000,
+			disableOnInteraction: false,
+		},
 
 		// Navigation arrows
 		navigation: {
