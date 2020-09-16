@@ -134,12 +134,6 @@ img {
 	}
 }
 
-/* banner */
-.overlay-filter {
-	backdrop-filter: blur(2px);
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
 .swiper-slide {
 	background-repeat: no-repeat;
 	background-position: center;
