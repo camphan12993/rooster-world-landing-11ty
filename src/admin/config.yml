@@ -80,8 +80,18 @@ collections:
                 label: "Link"
                 widget: "object"
                 fields:
-                  - { name: "text", label: "Text", widget: "string" }
-                  - { name: "url", label: "Url", widget: "string" }
+                  - {
+                      name: "text",
+                      label: "Text",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      name: "url",
+                      label: "Url",
+                      widget: "string",
+                      required: false,
+                    }
       - label: "Meta"
         name: "homePage"
         file: "src/index.md"
