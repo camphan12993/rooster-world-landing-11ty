@@ -7,16 +7,10 @@
       "title": "#VIETNAMREIMAGINED TOP FEATURE"
     },
     {
-      "image": "/assets/img/bg-callout.jpg",
-      "icon": "/assets/img/cube-solid.svg",
-      "subtitle": "Design",
-      "title": "This is a Test"
-    },
-    {
-      "image": "/assets/img/portfolio-1.jpg",
-      "icon": "/assets/img/cube-solid.svg",
-      "subtitle": "Graphic",
-      "title": "This is a test"
+      "image": "/assets/img/slide_calender.png",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "illustration",
+      "title": "calendar 2020"
     }
   ]
 }
