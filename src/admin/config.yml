@@ -70,13 +70,13 @@ collections:
                 label: "Icon"
                 widget: "image"
               - label: "Gallery"
-                required: "false"
+                required: false
                 name: "galleryImages"
                 widget: "list"
                 summary: "{{fields.image}}"
                 field: { label: Image, name: image, widget: image }
               - name: "link"
-                required: "false"
+                required: false
                 label: "Link"
                 widget: "object"
                 fields:
