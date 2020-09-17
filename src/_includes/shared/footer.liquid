@@ -1,12 +1,20 @@
 <!-- Footer -->
-<footer class="footer-area py-10 md:py-18">
+<footer class="footer-area py-10 px-8 md:py-18">
   <div class="container mx-auto">
-    <h5 class="uppercase text-center text-2xl text-blue-900">{{footer.title}}</h5>
-    <div class="flex justify-center my-3 text-blue-900">
+    <h5 class="uppercase text-center text-2xl text-blue-900 mb-3">{{footer.title}}</h5>
+    <div class="flex justify-center text-blue-900 mb-3">
       {% for item in footer.socials %}
-        <a href="{{item.url}}" class="block p-6 md:px-10 text-blue-800 hover:text-blue-700">
-          {{ item.icon | | prepend: '/src' | svgContents:"w-6 h-6" }}
+        <a href="{{item.url}}" class="block p-3 md:px-10 text-blue-800 hover:text-blue-700">
+          {{ item.icon | prepend: '/src' | svgContents:"w-5 h-5" }}
         </a>
+      {% endfor %}
+    </div>
+    <div class="flex flex-col mb-3">
+      {% for item in footer.contact %}
+        <div class="flex items-center mb-1 text-gray-600">
+          {{ item.icon | prepend: '/src' | svgContents: "text-primary inline-block w-4 h-4 " }}
+          <span class="ml-4">{{item.text}}</span>
+        </div>
       {% endfor %}
     </div>
     <div class="copyrights text-center text-blue-900">

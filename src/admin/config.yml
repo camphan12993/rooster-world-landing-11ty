@@ -131,6 +131,12 @@ collections:
               - { name: "name", label: "Name", widget: "string" }
               - { name: "icon", label: "Icon", widget: "image" }
               - { name: "url", label: "Url", widget: "string" }
+          - name: "contact"
+            label: "Contact"
+            widget: "list"
+            fields:
+              - { name: "text", label: "Text", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "image" }
           - name: "copyRight"
             label: "Copy Right"
             widget: "string"

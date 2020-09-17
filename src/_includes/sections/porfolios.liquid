@@ -1,60 +1,66 @@
 <section class="section" id="portfolio">
-  <div class="container">
-    <div class="content-section-heading">
-      <div class="text-center text-primary mb-6">
-        <svg aria-hidden="true" class="inline-block w-12 svg-inline--fa fa-briefcase fa-w-16" data-icon="briefcase" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z" fill="currentColor"/>
-        </svg>
-      </div>
-      <h3 class="section-title">Our Works</h3>
-      <p class="section-subtitle">
-        From logo design to website designs and developers are ready to complete
-      </p>
-    </div>
-    <div class="flex flex-wrap">
-      {% for item in sections.portfolio.portfolios %}
-        <div class="portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0">
-          <div class="captain absolute w-full h-full text-white p-8 flex flex-col justify-center items-center z-10">
-            <h3 class="text-lg sm:text-2xl uppercase text-center">{{ item.name }}</h3>
-            <p class="mb-4 text-xs sm:text-base opacity-75 text-center">
-              {{ item.description }}
-            </p>
-            <div class="flex items-center">
-              {% if item.galleryImages and item.galleryImages.size > 0 %}
-                <a class="px-2 cursor-pointer" onclick="toggleGallery('{{forloop.index0}}')">
-                  <svg aria-hidden="true" class="hover:opacity-75 fill-current w-4 svg-inline--fa fa-search-plus fa-w-16" data-icon="search-plus" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z" fill="currentColor"/></svg>
-                </a>
-              {% endif %}
-              {% if item.link and item.link.url != "" %}
-                <a class="px-2 cursor-pointer" href="{{ item.link.url }}">
-                  <svg aria-hidden="true" class="hover:opacity-75 fill-current w-4 svg-inline--fa fa-link fa-w-16" data-icon="link" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z" fill="currentColor"/></svg>
-                </a>
-              {% endif %}
+    <div class="container">
+        <div class="content-section-heading">
+            <div class="text-center text-primary mb-6">
+                <svg aria-hidden="true" class="inline-block w-12 svg-inline--fa fa-briefcase fa-w-16" data-icon="briefcase" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z" fill="currentColor"/>
+                </svg>
             </div>
-          </div>
-          <div class="relative pb-2/3">
-            <img class="absolute w-full h-full object-cover object-center" src="{{ item.thumnail }}" alt=""/>
-          </div>
+            <h3 class="section-title">Our Works</h3>
+            <p class="section-subtitle">
+                From logo design to website designs and developers are ready to complete
+            </p>
         </div>
-      {% endfor %}
+        <div class="flex flex-wrap">
+            {% for item in sections.portfolio.portfolios %}
+                <div class="portfolio block relative overflow-hidden w-full mb-6 md:w-1/2 md:mb-0">
+                    <div class="captain absolute w-full h-full text-white p-8 flex flex-col justify-center items-center z-10">
+                        <h3 class="text-lg sm:text-2xl uppercase text-center">
+                            {{ item.name }}
+                        </h3>
+                        <p class="mb-4 text-xs sm:text-base opacity-75 text-center">
+                            {{ item.description }}
+                        </p>
+                        <div class="flex items-center">
+                            {% if item.galleryImages and item.galleryImages.size > 0 %}
+                                <a class="px-2 cursor-pointer" onclick="toggleGallery('{{ forloop.index0 }}')">
+                                    <svg aria-hidden="true" class="hover:opacity-75 fill-current w-4 svg-inline--fa fa-search-plus fa-w-16" data-icon="search-plus" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            {% endif %}
+                            {% if item.link and item.link.url != "" %}
+                                <a class="px-2 cursor-pointer" href="{{ item.link.url }}">
+                                    <svg aria-hidden="true" class="hover:opacity-75 fill-current w-4 svg-inline--fa fa-link fa-w-16" data-icon="link" data-prefix="fas" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="relative pb-2/3">
+                        <img class="absolute w-full h-full object-cover object-center" src="{{ item.thumnail }}" alt=""/>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-  </div>
-  <div class="fixed inset-0 hidden" id="gallery" style="z-index: 99999; background: rgba(0, 0, 0, 0.6)">
-    <div class="p-8 md:p-16 h-full w-full flex items-center justify-center">
-      <span class="top-0 right-0 m-4 absolute w-3 md:w-6 text-gray-500 hover:opacity-75" onclick="closeGallery()">
-        <svg aria-hidden="true" class="svg-inline--fa fa-times fa-w-11" data-icon="times" data-prefix="fas" viewbox="0 0 352 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor"/>
-        </svg>
-      </span>
-      <div class="swiper-gallery h-full w-full overflow-hidden relative">
-        <div class="swiper-wrapper" id="swiper-wrapper"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev text-gray-200"></div>
-        <div class="swiper-button-next text-gray-200"></div>
-      </div>
+    <div class="fixed inset-0 hidden" id="gallery" style="z-index: 99999; background: rgba(0, 0, 0, 0.6)">
+        <div class="p-8 md:p-16 h-full w-full flex items-center justify-center">
+            <span class="top-0 right-0 m-4 absolute w-3 md:w-6 text-gray-500 hover:opacity-75" onclick="closeGallery()">
+                <svg aria-hidden="true" class="svg-inline--fa fa-times fa-w-11" data-icon="times" data-prefix="fas" viewbox="0 0 352 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor"/>
+                </svg>
+            </span>
+            <div class="swiper-gallery h-full w-full overflow-hidden relative">
+                <div class="swiper-wrapper" id="swiper-wrapper"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev text-gray-200"></div>
+                <div class="swiper-button-next text-gray-200"></div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <script>
