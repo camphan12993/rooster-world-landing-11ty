@@ -37,7 +37,7 @@ var mySwiperGallery = new Swiper(".swiper-gallery", {
 function handleGallery(imgs) {
 	document.getElementById("gallery").classList.toggle("hidden");
 	for (let index = 0; index < imgs.length; index++) {
-		var slide = `<div class="swiper-slide" style="background-color: rgba(0,0,0,0);"><img src="${imgs[index]}" style="height:100%;width:auto;margin:0 auto"></div>`;
+		var slide = `<div class="swiper-slide" style="background-color: rgba(0,0,0,0);background-image: url('${imgs[index]}'); background-size:contain"></div>`;
 		mySwiperGallery.appendSlide(slide);
 	}
 }
