@@ -1,13 +1,13 @@
 <!-- Footer -->
 <footer class="footer-area py-10 px-8 md:py-18">
-  <div class="container mx-auto">
+  <div class="container mx-auto" style="max-width: 540px;">
     <div class="text-center mb-3">
       {{ "/src/assets/img/icon_svg.svg" | svgContents:"w-12 h-12 inline-block text-primary" }}
     </div>
-    <h5 class="uppercase text-center text-2xl text-blue-900 mb-3">{{footer.title}}</h5>
+    <h5 class="uppercase text-center text-2xl text-secondary mb-2">{{footer.title}}</h5>
     <div class="flex justify-center text-blue-900 mb-3">
       {% for item in footer.socials %}
-        <a href="{{item.url}}" class="block p-3 md:px-10 text-blue-800 hover:text-blue-700">
+        <a href="{{item.url}}" class="block p-3 text-gray-600 hover:text-gray-400">
           {{ item.icon | prepend: '/src' | svgContents:"w-5 h-5" }}
         </a>
       {% endfor %}
@@ -20,11 +20,11 @@
         </div>
       {% endfor %}
     </div>
-    <div class="copyrights text-center text-blue-900">
-      <p class="para">
+    <div class="copyrights">
+      <p class="para text-gray-600">
         {{footer.copyRight}}
         | Made by
-        <a href="{{footer.madeBy.url}}">
+        <a href="{{footer.madeBy.url}}" class="text-gray-800 hover:text-gray-600">
           <b>{{footer.madeBy.author}}</b>
         </a>
       </p>
