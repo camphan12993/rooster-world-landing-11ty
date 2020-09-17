@@ -2,25 +2,16 @@
   "brandTitle": "/assets/img/logo.png",
   "nav": [
     {
-      "label": "About",
-      "url": "#about"
-    },
-    {
       "label": "Services",
       "url": "#services"
     },
     {
-      "label": "Portfolio",
+      "label": "Portfolios",
       "url": "#portfolio"
     },
     {
       "label": "Contact",
       "url": "#contact"
-    },
-    {
-      "label": "Shop",
-      "url": "https://shop.rooster-world.com",
-      "icon": "fa-shopping-cart"
     }
   ]
 }
