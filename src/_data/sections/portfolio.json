@@ -33,6 +33,15 @@
         "url": "https://coming-soon-neumorphism.netlify.app/"
       },
       "thumnail": "/assets/img/capture.png"
+    },
+    {
+      "name": "Not Found Page ver 1",
+      "thumnail": "/assets/img/screen-shot-2020-09-17-at-14.28.38.png",
+      "link": {
+        "text": "404 page not found",
+        "url": "https://404-notfound-flashlight.netlify.app/"
+      },
+      "description": "404 Page Not Found Demo Version 1"
     }
   ]
 }
