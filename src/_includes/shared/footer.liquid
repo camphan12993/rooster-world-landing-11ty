@@ -1,6 +1,9 @@
 <!-- Footer -->
 <footer class="footer-area py-10 px-8 md:py-18">
   <div class="container mx-auto">
+    <div class="text-center mb-3">
+      {{ "/src/assets/img/icon_svg.svg" | svgContents:"w-12 h-12 inline-block text-primary" }}
+    </div>
     <h5 class="uppercase text-center text-2xl text-blue-900 mb-3">{{footer.title}}</h5>
     <div class="flex justify-center text-blue-900 mb-3">
       {% for item in footer.socials %}
