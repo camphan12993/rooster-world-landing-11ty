@@ -16,7 +16,7 @@
       {% for item in footer.contact %}
         <div class="flex items-center mb-1 text-gray-600">
           {{ item.icon | prepend: '/src' | svgContents: "text-primary inline-block w-4 h-4 " }}
-          <span class="ml-4">{{item.text}}</span>
+          <span class="ml-4 italic font-light">{{item.text}}</span>
         </div>
       {% endfor %}
     </div>
