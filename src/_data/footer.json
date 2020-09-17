@@ -17,7 +17,20 @@
       "icon": "/assets/img/github-brands.svg"
     }
   ],
-  "contact": [],
+  "contact": [
+    {
+      "text": "0935050930",
+      "icon": "/assets/img/phone-solid.svg"
+    },
+    {
+      "text": "Da Nang, Viet Nam",
+      "icon": "/assets/img/location-arrow-solid.svg"
+    },
+    {
+      "text": "roosterworldvn@gmail.com",
+      "icon": "/assets/img/envelope-solid.svg"
+    }
+  ],
   "copyRight": "Copyright ©2020 All rights reserved",
   "madeBy": {
     "author": "Cam Phan",
