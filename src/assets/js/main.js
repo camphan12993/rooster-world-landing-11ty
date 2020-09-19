@@ -59,6 +59,10 @@ function toggleSocialMenu() {
 }
 
 window.onload = function () {
+	setTimeout(() => {
+		document.getElementById("loading").classList.add("fade-out");
+	}, 2000);
+
 	initSlides();
 };
 

@@ -178,6 +178,21 @@ img {
 	}
 }
 
+/* loading */
+.loading.fade-out {
+	animation: fadeOut 1s both;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 /* services */
 .service-item {
 	box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);

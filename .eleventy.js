@@ -25,7 +25,7 @@ module.exports = function (config) {
 	config.addPlugin(svgContents);
 	config.addPlugin(lazyImagesPlugin, {
 		transformImgPath: (imgPath) => {
-			if (imgPath.startsWith("/") && !imgPath.startsWith("//")) {
+			if (imgPath.startsWith("/assets/img") && !imgPath.startsWith("//")) {
 				return `./src${imgPath}`;
 			}
 
