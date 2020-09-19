@@ -1,7 +1,7 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
 	// Specify the paths to all of the template files in your project
 	content: ["./src/**/*.liquid"],
-	whitelist: ["active,fade-out"],
+	whitelist: ["active", "fade-out", "loading"],
 	whitelistPatterns: [/swiper/g],
 	whitelistPatternsChildren: [/swiper/g],
 	// Include any special characters you're using in this regular expression
@@ -17,7 +17,7 @@ module.exports = {
 		// ...
 		require("tailwindcss"),
 		require("autoprefixer"),
-		...(process.env.NODE_ENV === "production" ? [purgecss, cssnano] : []),
+		...(process.env.NODE_ENV !== "production" ? [purgecss, cssnano] : []),
 		// ...
 	],
 };
