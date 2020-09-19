@@ -3,7 +3,11 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections: 
+sections:
+- type: document
+  path: src/_data/sections/banner.json
+  label: Banners
+  match: "**/*"
 upload_dir: src/assets/img
 public_path: "/assets/img"
 front_matter_path: ''
