@@ -42,6 +42,21 @@
         "url": "https://404-notfound-flashlight.netlify.app/"
       },
       "description": "404 Page Not Found Demo Version 1"
+    },
+    {
+      "name": "Branding Identity for \"Dai Nguyen Phu\" feng-shui shop",
+      "thumnail": "/assets/img/1.png",
+      "galleryImages": [
+        "/assets/img/4.png",
+        "/assets/img/5.png",
+        "/assets/img/6.png",
+        "/assets/img/7.png",
+        "/assets/img/other.png"
+      ],
+      "link": {
+        "text": "BI",
+        "url": "url "
+      }
     }
   ]
 }
