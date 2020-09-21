@@ -1,39 +1,39 @@
 {
-  "title": "Connect with us!",
-  "socials": [
-    {
-      "name": "facebook",
-      "url": "https://www.facebook.com/Rooster-World-226698281969501",
-      "icon": "/assets/img/facebook-f-brands.svg"
-    },
-    {
-      "name": "youtube",
-      "url": "https://www.youtube.com/channel/UCJXXo_pNzuzGySiUGAkVC1g",
-      "icon": "/assets/img/youtube-brands.svg"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/camphan12993",
-      "icon": "/assets/img/github-brands.svg"
-    }
-  ],
-  "contact": [
-    {
-      "text": "0935050930",
-      "icon": "/assets/img/phone-solid.svg"
-    },
-    {
-      "text": "Da Nang, Viet Nam",
-      "icon": "/assets/img/location-arrow-solid.svg"
-    },
-    {
-      "text": "roosterworldvn@gmail.com",
-      "icon": "/assets/img/envelope-solid.svg"
-    }
-  ],
-  "copyRight": "Copyright ©2020 All rights reserved",
-  "madeBy": {
-    "author": "Cam Phan",
-    "url": "#"
-  }
+	"title": "Connect with us!",
+	"socials": [
+		{
+			"name": "facebook",
+			"url": "https://www.facebook.com/Rooster-World-226698281969501",
+			"icon": "/assets/img/facebook-f-brands.svg"
+		},
+		{
+			"name": "youtube",
+			"url": "https://www.youtube.com/channel/UCJXXo_pNzuzGySiUGAkVC1g",
+			"icon": "/assets/img/youtube-brands.svg"
+		},
+		{
+			"name": "github",
+			"url": "https://github.com/camphan12993",
+			"icon": "/assets/img/github-brands.svg"
+		}
+	],
+	"contact": [
+		{
+			"text": "(+84) 0935050930",
+			"icon": "/assets/img/phone-solid.svg"
+		},
+		{
+			"text": "Da Nang, Viet Nam",
+			"icon": "/assets/img/location-arrow-solid.svg"
+		},
+		{
+			"text": "roosterworldvn@gmail.com",
+			"icon": "/assets/img/envelope-solid.svg"
+		}
+	],
+	"copyRight": "Copyright ©2020 All rights reserved",
+	"madeBy": {
+		"author": "Rooster World Viet Nam",
+		"url": "#"
+	}
 }
