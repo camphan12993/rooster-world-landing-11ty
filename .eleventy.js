@@ -34,7 +34,7 @@ module.exports = function (config) {
 	});
 
 	config.addLiquidFilter("toJson", function (value) {
-		return JSON.stringify(value[0]);
+		return JSON.stringify(value);
 	});
 
 	// watch
