@@ -246,4 +246,16 @@ img {
 	@apply text-white;
 }
 
+/* callout */
+.callout img {
+	filter: blur(2px);
+	transition: 1s;
+	transform: scale(1.2);
+}
+
+.callout .overlay:hover ~ img {
+	filter: none;
+	transform: scale(1);
+}
+
 @tailwind utilities;

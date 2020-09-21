@@ -3,10 +3,12 @@ backend:
   branch: master # Branch to update
 media_folder: "src/assets/img"
 public_folder: "/assets/img"
+publish_mode: editorial_workflow
 
 collections:
   - name: "home"
     label: "Home"
+    preview_path: ""
     files:
       - label: "Banner"
         name: "banner"
