@@ -17,6 +17,12 @@
       "icon": "/assets/img/desktop-solid.svg",
       "subtitle": "Website",
       "title": "Neumorphism Coming soon page for your incoming website"
+    },
+    {
+      "image": "/assets/img/slide_graphic.png",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "Branding identity ",
+      "title": "Graphic design"
     }
   ]
 }
