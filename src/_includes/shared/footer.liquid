@@ -4,7 +4,7 @@
     <div class="text-center mb-3">
       {{ "/src/assets/img/icon_svg.svg" | svgContents:"w-12 h-12 inline-block text-primary" }}
     </div>
-    <h5 class="uppercase text-center text-2xl text-secondary mb-2">{{footer.title}}</h5>
+    <div class="uppercase text-center text-2xl text-secondary mb-2">{{footer.title}}</div>
     <div class="flex justify-center text-blue-900 mb-3">
       {% for item in footer.socials %}
         <a href="{{item.url}}" class="block p-3 text-gray-600 hover:text-gray-400">
