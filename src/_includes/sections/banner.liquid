@@ -1,6 +1,6 @@
 <section class='site-banner px-4 sm:px-8'>
   <div class='container'>
-    <div class='swiper-container rounded-lg relative'>
+    <div class='swiper-container relative' style='border-radius: 20px;'>
       <div class='swiper-wrapper'>
         {{banner}}
         {% for item in sections.banner.banners %}
@@ -19,6 +19,9 @@
             </div>
           </div>
         {% endfor %}
+        <div class='swiper-slide relative'>
+          <video class='w-full h-full object-cover' src='https://res.cloudinary.com/dduublnsr/video/upload/v1600926267/samples/sea-turtle.mp4'></video>
+        </div>
       </div>
       <div class='swiper-pagination'></div>
       <div class='hidden sm:block swiper-button-prev text-gray-200'></div>
