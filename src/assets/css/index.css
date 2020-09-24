@@ -1,6 +1,6 @@
 :root {
-	--color-primary: #ffc93b;
-	--color-secondary: #2e4059;
+  --color-primary: #ffc93b;
+  --color-secondary: #2e4059;
 }
 
 @tailwind base;
@@ -8,14 +8,14 @@
 @tailwind components;
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* global */
 html,
 body {
-	font-family: "Nunito", sans-serif;
-	font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
 }
 h1,
 h2,
@@ -23,240 +23,216 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1.2;
+  line-height: 1.2;
 }
 h1 {
-	@apply text-6xl;
+  @apply text-6xl;
 }
 h2 {
-	@apply text-4xl;
+  @apply text-4xl;
 }
 h3 {
-	@apply text-2xl;
+  @apply text-2xl;
 }
 
 img {
-	display: block;
-	width: 100%;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* button */
 
 .btn {
-	@apply font-bold py-2 px-4 rounded;
+  @apply font-bold py-2 px-4 rounded;
 }
 
 .btn-primary {
-	@apply bg-primary text-white transition-opacity duration-100;
+  @apply bg-primary text-white transition-opacity duration-100;
 }
 
 .btn-primary:hover {
-	@apply opacity-75;
+  @apply opacity-75;
 }
 .btn-secondary {
-	@apply bg-yellow-600 text-white;
+  @apply bg-yellow-600 text-white;
 }
 
 .btn-secondary:hover {
-	@apply bg-yellow-500;
+  @apply bg-yellow-500;
 }
 .btn-xl {
-	@apply px-6 py-4;
+  @apply px-6 py-4;
 }
 
 /* form */
 #contactForm input,
 #contactForm textarea {
-	@apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-5 px-4 leading-tight mb-1;
+  @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-5 px-4 leading-tight mb-1;
 }
 
 #contactForm input:hover,
 #contactForm textarea:hover {
-	@apply outline-none bg-white border-gray-500;
+  @apply outline-none bg-white border-gray-500;
 }
 /* section */
 .section {
-	@apply py-12 px-6;
+  @apply py-12 px-6;
 }
 
 @screen md {
-	.section {
-		@apply py-20;
-	}
+  .section {
+    @apply py-20;
+  }
 }
 
 /* text */
 .section-title {
-	@apply text-3xl text-center text-secondary mb-2 uppercase font-semibold tracking-widest;
+  @apply text-3xl text-center text-secondary mb-2 uppercase font-semibold tracking-widest;
 }
 
 .section-subtitle {
-	@apply text-lg mb-10 text-center text-gray-500 font-light tracking-wide;
+  @apply text-lg mb-10 text-center text-gray-500 font-light tracking-wide;
 }
 
 /* background */
 .bg-blur {
-	filter: blur(8px);
-	-webkit-filter: blur(8px);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 /* menu */
 .overlay-menu {
-	background-color: white;
-	opacity: 0;
-	animation: fading 0.5s;
+  background-color: white;
+  opacity: 0;
+  animation: fading 0.5s;
 }
 
 .overlay-menu.active {
-	opacity: 0.9;
-	display: block;
+  opacity: 0.9;
+  display: block;
 }
 
 .social-menu.active {
-	display: flex;
+  display: flex;
 }
 
 .social-menu > a {
-	@apply border-b border-gray-200;
+  @apply border-b border-gray-200;
 }
 
 .social-menu a:last-child {
-	@apply border-b-0;
+  @apply border-b-0;
 }
 
 @keyframes fading {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0.9;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
 .swiper-slide {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-color: white;
-}
-
-.slide-icon {
-	top: 23px;
-	bottom: 68px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
 }
 
 .swiper-container {
-	height: 320px;
+  height: 320px;
 }
 .swiper-pagination-bullet {
-	@apply bg-gray-200;
-}
-
-@screen sm {
-	.slide-icon {
-		top: 25px;
-		bottom: 68px;
-	}
+  @apply bg-gray-200;
 }
 
 @screen md {
-	.swiper-container {
-		height: 540px;
-	}
-
-	.slide-icon {
-		top: 30px;
-		bottom: 72px;
-	}
-}
-
-@screen lg {
-	.slide-icon {
-		top: 37px;
-		bottom: 75px;
-	}
+  .swiper-container {
+    height: 540px;
+  }
 }
 
 /* loading */
 .loading.fade-out {
-	animation: fadeOut 1s both;
+  animation: fadeOut 1s both;
 }
 
 @keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-		visibility: hidden;
-	}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /* services */
 .service-item {
-	box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
-	border-radius: 1.5rem;
-	transition: all 0.2s ease-out;
-	will-change: transform;
-	height: 100%;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-out;
+  will-change: transform;
+  height: 100%;
 }
 
 .service-item:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
 }
 
 /* portfolio */
 .portfolio .captain,
 .portfolio img {
-	transition: all 0.2s;
-	clip-path: inset(0);
+  transition: all 0.2s;
+  clip-path: inset(0);
 }
 .portfolio:hover .captain,
 .portfolio:hover img {
-	clip-path: inset(1rem);
+  clip-path: inset(1rem);
 }
 
 .portfolio .captain {
-	@apply opacity-0;
+  @apply opacity-0;
 }
 
 .portfolio:hover .captain {
-	@apply opacity-100;
-	background-color: rgba(0, 0, 0, 0.4);
+  @apply opacity-100;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .swiper-gallery .swiper-pagination-bullet {
-	width: 20px;
-	height: 20px;
-	text-align: center;
-	line-height: 20px;
-	font-size: 12px;
-	color: #000;
-	opacity: 1;
-	background: rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .swiper-gallery .swiper-pagination-bullet-active {
-	@apply text-white bg-gray-400;
+  @apply text-white bg-gray-400;
 }
 
 .swiper-gallery .swiper-pagination-bullet {
-	@apply text-white;
+  @apply text-white;
 }
 
 /* callout */
 .callout img {
-	filter: blur(2px);
-	transition: 1s;
-	transform: scale(1.2);
+  filter: blur(2px);
+  transition: 1s;
+  transform: scale(1.2);
 }
 
 .callout .overlay:hover ~ img {
-	filter: none;
-	transform: scale(1);
+  filter: none;
+  transform: scale(1);
 }
 
 @tailwind utilities;

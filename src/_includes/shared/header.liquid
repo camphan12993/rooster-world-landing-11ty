@@ -1,44 +1,44 @@
 <header>
-  <nav class="py-2 sm:py-4 px-4 sm:px-8 md:py-0">
-    <div class="container flex justify-center md:border-b border-gray-200">
-      <div class="min-w-1/5 w-1/5 flex items-center">
-        <button aria-label="Open Menu" class="flex items-center p-1 text-gray-600 hover:text-gray-400 focus:outline-none md:hidden" onclick="toggleMenu()">
-          <svg class="fill-current w-6 h-6" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M16.4 9H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1z"/></svg>
+  <nav class='py-2 sm:py-4 px-4 sm:px-8 md:py-0'>
+    <div class='container flex justify-center md:border-b border-gray-200'>
+      <div class='min-w-1/5 w-1/5 flex items-center'>
+        <button aria-label='Open Menu' class='flex items-center p-1 text-gray-600 hover:text-gray-400 focus:outline-none md:hidden' onclick='toggleMenu()'>
+          <svg class='fill-current w-6 h-6' viewbox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M16.4 9H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1z'/></svg>
         </button>
       </div>
-      <div class="flex-1 text-center">
-        <img class="h-4 sm:h-6 w-auto my-8 inline-block" src="{{ header.brandTitle }}" alt="header">
+      <div class='flex-1 text-center'>
+        <img class='h-4 sm:h-6 w-auto my-8 inline-block' src="{{ header.brandTitle }}" alt='header'>
       </div>
-      <div class="flex items-center justify-end min-w-1/5 w-1/5">
-        <div class="relative">
-          <button aria-label="Toggle Social Menu" class="relative block md:hidden text-gray-600 hover:text-gray-400 focus:outline-none" id="social-menu-trigger" onclick="toggleSocialMenu()">
-            <svg aria-hidden="true" class="fill-current w-5 h-5 svg-inline--fa fa-share-alt fa-w-14" data-icon="share-alt" data-prefix="fas" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 000-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 00256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z" fill="currentColor"/></svg>
+      <div class='flex items-center justify-end min-w-1/5 w-1/5'>
+        <div class='relative'>
+          <button aria-label='Toggle Social Menu' class='relative block md:hidden text-gray-600 hover:text-gray-400 focus:outline-none' id='social-menu-trigger' onclick='toggleSocialMenu()'>
+            <svg aria-hidden='true' class='fill-current w-5 h-5 svg-inline--fa fa-share-alt fa-w-14' data-icon='share-alt' data-prefix='fas' viewbox='0 0 448 512' xmlns='http://www.w3.org/2000/svg'><path d='M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 000-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 00256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z' fill='currentColor'/></svg>
           </button>
-          <div class="flex-col md:flex md:flex-row md:items-center md:relative md:bg-opacity-0 md:shadow-none md:border-none md:mt-0 social-menu absolute z-40 hidden left-1/2 transform -translate-x-1/2 top-full shadow-md rounded-md bg-white mt-2" id="social-menu">
-            {% for item in footer.socials %}
-              <a href="{{item.url}}" class="md:border-none block p-4 text-gray-600 transition duration-200 hover:text-gray-400">
-                {{ item.icon | prepend: '/src' | svgContents:"w-5 h-5" }}
+          <div class='flex-col md:flex md:flex-row md:items-center md:relative md:bg-opacity-0 md:shadow-none md:border-none md:mt-0 social-menu absolute z-40 hidden left-1/2 transform -translate-x-1/2 top-full shadow-md rounded-md bg-white mt-2' id='social-menu'>
+            {% for item in settings.socials %}
+              <a href="{{item.url}}" class='md:border-none block p-4 text-gray-600 transition duration-200 hover:text-gray-400'>
+                <ion-icon class='text-lg' src="{{ item.icon }}"></ion-icon>
               </a>
             {% endfor %}
           </div>
         </div>
       </div>
     </div>
-    <div class="menu hidden md:flex md:items-center md:w-auto md:justify-center">
+    <div class='menu hidden md:flex md:items-center md:w-auto md:justify-center'>
       {% for item in header.nav %}
-        <a href="{{ item.url }}" class="nav-item block font-bold uppercase text-secondary mx-4 text-sm transition duration-200 opacity-50 hover:opacity-100" style="line-height: 70px">
+        <a href="{{ item.url }}" class='nav-item block font-bold uppercase text-secondary mx-4 text-sm transition duration-200 opacity-50 hover:opacity-100' style='line-height: 70px'>
           {{ item.label }}
         </a>
       {% endfor %}
     </div>
-    <div class="fixed overlay-menu z-50 hidden inset-0 md:hidden" id="nav-menu">
-      <div class="absolute flex flex-col items-center justify-center inset-0">
-        <button aria-label="Close Menu" class="absolute right-0 top-0 p-1 transition duration-300 text-secondary opacity-75 hover:opacity-50 focus:outline-none" onclick="toggleMenu()" style="margin-right:24px;margin-top:24px">
-          <svg aria-hidden="true" class="fill-current w-6 svg-inline--fa fa-times fa-w-11" data-icon="times" data-prefix="fas" viewbox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor"/></svg>
+    <div class='fixed overlay-menu z-50 hidden inset-0 md:hidden' id='nav-menu'>
+      <div class='absolute flex flex-col items-center justify-center inset-0'>
+        <button aria-label='Close Menu' class='absolute right-0 top-0 p-1 transition duration-300 text-secondary opacity-75 hover:opacity-50 focus:outline-none' onclick='toggleMenu()' style='margin-right:24px;margin-top:24px'>
+          <svg aria-hidden='true' class='fill-current w-6 svg-inline--fa fa-times fa-w-11' data-icon='times' data-prefix='fas' viewbox='0 0 352 512' xmlns='http://www.w3.org/2000/svg'><path d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z' fill='currentColor'/></svg>
         </button>
-        <div class="flex flex-col items-center">
+        <div class='flex flex-col items-center'>
           {% for item in header.nav %}
-            <a href="{{ item.url }}" onclick="toggleMenu()" class="block transition duration-300 transform mb-6 text-secondary font-bold text-2xl opacity-75 hover:opacity-100 hover:scale-150">
+            <a href="{{ item.url }}" onclick='toggleMenu()' class='block transition duration-300 transform mb-6 text-secondary font-bold text-2xl opacity-75 hover:opacity-100 hover:scale-150'>
               {{ item.label }}
             </a>
           {% endfor %}
