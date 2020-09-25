@@ -88,7 +88,7 @@ function toggleGallery(imgs, videoUrl) {
 		mySwiperGallery.appendSlide(slide);
 	}
 	if (videoUrl && videoUrl != '') {
-		var slide = `<div class="swiper-slide" style="background-color: rgba(0,0,0,0)"><video class="w-4/5 m-auto" controls><source src="${videoUrl}" type='video/mp4'></video></div>`;
+		var slide = `<div class="swiper-slide flex items-center justify-center" style="background-color: rgba(0,0,0,0)"><video class="w-4/5" controls><source src="${videoUrl}" type='video/mp4'></video></div>`;
 		mySwiperGallery.appendSlide(slide);
 	}
 
