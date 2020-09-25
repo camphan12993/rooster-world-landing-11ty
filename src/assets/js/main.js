@@ -81,9 +81,7 @@ function closeGallery() {
 	mySwiperGallery.removeAllSlides();
 }
 
-function toggleGallery(item) {
-	var imgs = item.galleryImages;
-	var videoUrl = item.videoUrl;
+function toggleGallery(imgs, videoUrl) {
 	document.getElementById('gallery').classList.toggle('hidden');
 	for (let index = 0; index < imgs.length; index++) {
 		var slide = `<div class="swiper-slide" style="background-color: rgba(0,0,0,0);background-image: url('${imgs[index]}'); background-size:contain"></div>`;
