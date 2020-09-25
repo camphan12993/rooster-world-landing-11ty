@@ -4,24 +4,30 @@
       <div class='swiper-wrapper'>
         {{banner}}
         {% for item in sections.banner.banners %}
-          <div class='swiper-slide relative' style='background-image: url({{item.image}})'>
-            <div class='absolute inset-0' style='background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 60%);'></div>
-            <div class='absolute bottom-0 w-full'>
-              <div class='px-0 pl-10 mx-4 sm:mx-10 pb-16 lg:mx-32 '>
-                <div class='relative pl-4 md:pl-6 border-white border-opacity-25 border-l'>
-                  <h3 class='text-primary text-sm md:text-lg uppercase text-sha lg:text-xl mb-1'>{{ item.subtitle }}</h3>
-                  <h2 class='relative slide-title uppercase font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl text-white'>
-                    {{ item.title }}</h2>
-                  <ion-icon class='absolute top-0 h-full left-0 transform -translate-x-full pr-4 md:pr-6 md:text-3xl lg:text-4xl text-white text-opacity-75' src="{{item.icon}}"></ion-icon>
-
+          {% if item.videoUrl and item.videoUrl != '' %}
+            <div class='swiper-slide relative'>
+              <video class='w-full h-full object-cover'>
+                <source src="{{item.videoUrl}}" type='video/mp4'>
+                Error
+              </video>
+            </div>
+          {% else %}
+            <div class='swiper-slide relative' style='background-image: url({{item.image}})'>
+              <div class='absolute inset-0' style='background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 60%);'></div>
+              <div class='absolute bottom-0 w-full'>
+                <div class='px-0 pl-10 mx-4 sm:mx-10 pb-16 lg:mx-32 '>
+                  <div class='relative pl-4 md:pl-6 border-white border-opacity-25 border-l'>
+                    <h3 class='text-primary text-sm md:text-lg uppercase text-sha lg:text-xl mb-1'>{{ item.subtitle }}</h3>
+                    <h2 class='relative slide-title uppercase font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl text-white'>
+                      {{ item.title }}</h2>
+                    <ion-icon class='absolute top-0 h-full left-0 transform -translate-x-full pr-4 md:pr-6 md:text-3xl lg:text-4xl text-white text-opacity-75' src="{{item.icon}}"></ion-icon>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          {% endif %}
+
         {% endfor %}
-        <div class='swiper-slide relative'>
-          <video class='w-full h-full object-cover' src='https://res.cloudinary.com/dduublnsr/video/upload/v1600926267/samples/sea-turtle.mp4'></video>
-        </div>
       </div>
       <div class='swiper-pagination'></div>
       <div class='hidden sm:block swiper-button-prev text-gray-200'></div>
