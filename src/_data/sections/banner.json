@@ -1,29 +1,29 @@
 {
-  "banners": [
-    {
-      "image": "/assets/img/slide_macdinhchi.png",
-      "icon": "/assets/img/pen-solid.svg",
-      "subtitle": "Illustration",
-      "title": "#VIETNAMREIMAGINED TOP FEATURE"
-    },
-    {
-      "image": "/assets/img/slide_calendarartboard-2.png",
-      "icon": "/assets/img/pen-solid.svg",
-      "subtitle": "illustration",
-      "title": "calendar 2020"
-    },
-    {
-      "image": "/assets/img/slide_graphic.png",
-      "icon": "/assets/img/pen-solid.svg",
-      "subtitle": "Branding identity ",
-      "title": "Graphic design "
-    },
-    {
-      "image": "/assets/img/32207562_1771260006254889_845056303209381888_n.jpg",
-      "icon": "/assets/img/pen-solid.svg",
-      "subtitle": "Photograph hostel branding design",
-      "title": "Graphic design ",
-      "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601004901/hostel_algbtq.mp4"
-    }
-  ]
+	"banners": [
+		{
+			"image": "/assets/img/slide_macdinhchi.png",
+			"icon": "/assets/img/pen-solid.svg",
+			"subtitle": "Illustration",
+			"title": "#VIETNAMREIMAGINED TOP FEATURE"
+		},
+		{
+			"image": "/assets/img/slide_calendarartboard-2.png",
+			"icon": "/assets/img/pen-solid.svg",
+			"subtitle": "illustration",
+			"title": "calendar 2020"
+		},
+		{
+			"image": "/assets/img/slide_graphic.png",
+			"icon": "/assets/img/pen-solid.svg",
+			"subtitle": "Branding identity ",
+			"title": "Graphic design"
+		},
+		{
+			"image": "/assets/img/photograph.png",
+			"icon": "/assets/img/pen-solid.svg",
+			"subtitle": "Photograph hostel branding design",
+			"title": "Graphic design",
+			"videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601021474/video-1601021383_pouond.mp4"
+		}
+	]
 }
