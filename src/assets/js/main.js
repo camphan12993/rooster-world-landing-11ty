@@ -10,10 +10,10 @@ function initSlides() {
 		},
 		// Optional parameters
 		loop: true,
-		// autoplay: {
-		//   delay: 15000,
-		//   disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 15000,
+			disableOnInteraction: false,
+		},
 
 		// Navigation arrows
 		navigation: {
