@@ -1,19 +1,19 @@
 {
-  "socials": [
-    {
-      "name": "facebook",
-      "url": "https://www.facebook.com/Rooster-World-226698281969501",
-      "icon": "/assets/img/facebook-f-brands.svg"
-    },
-    {
-      "name": "youtube",
-      "url": "https://www.youtube.com/channel/UCJXXo_pNzuzGySiUGAkVC1g",
-      "icon": "/assets/img/youtube-brands.svg"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/camphan12993",
-      "icon": "/assets/img/github-brands.svg"
-    }
-  ]
+	"socials": [
+		{
+			"name": "facebook",
+			"url": "https://www.facebook.com/roosterworldvn",
+			"icon": "/assets/img/facebook-f-brands.svg"
+		},
+		{
+			"name": "youtube",
+			"url": "https://www.youtube.com/channel/UCJXXo_pNzuzGySiUGAkVC1g",
+			"icon": "/assets/img/youtube-brands.svg"
+		},
+		{
+			"name": "github",
+			"url": "https://github.com/camphan12993",
+			"icon": "/assets/img/github-brands.svg"
+		}
+	]
 }

@@ -40,17 +40,17 @@
 			}
 		},
 		{
-			"name": "Coming soon page",
+			"name": "Finger Print Coming soon page",
 			"description": "Neumorphism Design, Dark Mode, Countdown Timer",
 			"icon": "/assets/img/desktop-solid.svg",
 			"link": {
 				"text": "Url",
 				"url": "https://coming-soon-neumorphism.netlify.app/"
 			},
-			"thumnail": "/assets/img/capture.png"
+			"thumnail": "/assets/img/comingsoon.png"
 		},
 		{
-			"name": "Not Found Page ver 1",
+			"name": "Not Found Page Design",
 			"thumnail": "/assets/img/screen-shot-2020-09-17-at-14.28.38.png",
 			"link": {
 				"text": "404 page not found",
