@@ -33,6 +33,7 @@ collections:
               - name: "video"
                 label: "Video Url"
                 widget: "string"
+                required: false
       - label: "Services"
         name: "service"
         file: "src/_data/sections/service.json"
@@ -71,7 +72,12 @@ collections:
                 summary: "{{fields.image}}"
                 fields:
                   - { label: Image, name: image, widget: image }
-                  - { label: Video, name: videoUrl, widget: string }
+                  - {
+                      label: Video,
+                      name: videoUrl,
+                      widget: string,
+                      required: false,
+                    }
               - name: "link"
                 required: false
                 label: "Link"
