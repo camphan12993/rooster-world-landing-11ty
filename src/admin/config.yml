@@ -71,13 +71,14 @@ collections:
                 widget: "list"
                 summary: "{{fields.image}}"
                 fields:
-                  - { label: Image, name: image, widget: image }
-                  - {
-                      label: Video,
-                      name: videoUrl,
-                      widget: string,
-                      required: false,
-                    }
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - label: "Video"
+                    name: "videoUrl"
+                    widget: "string"
+                    required: false
               - name: "link"
                 required: false
                 label: "Link"
