@@ -24,7 +24,7 @@
     <meta content='en_US' property='og:locale'>
     <meta property='og:title' content="{{ title }}">
     <meta property='og:description' content="{{ description }}">
-    <meta property='og:image' content="{{ imgsrc | prepend: siteUrl }}">
+    <meta property='og:image' content="{{ imgSrc | prepend: siteUrl }}">
     <meta content='1280' property='og:image:width'>
     <meta content='640' property='og:image:height'>
     <meta property='og:image:alt' content="{{ imgAtl }}">
@@ -34,8 +34,8 @@
     <meta property='twitter:url' content="{{ siteUrl }}">
     <meta property='twitter:title' content="{{ title }}">
     <meta property='twitter:description' content="{{ description }}">
-    <meta property='twitter:image' content="{{ imgsrc }}">
-    <meta property='twitter:image:alt' content="{{ imgalt }}">
+    <meta property='twitter:image' content="{{ imgSrc | prepend: siteUrl }}">
+    <meta property='twitter:image:alt' content="{{ imgAlt }}">
   </head>
   <body>
     <div class='loading fixed inset-0 flex items-center justify-center bg-white' id='loading' style='z-index: 999;'>

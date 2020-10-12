@@ -85,13 +85,14 @@ collections:
                       required: false,
                     }
       - label: "Meta"
-        name: "homePage"
+        name: "meta"
         file: "src/index.md"
         fields:
           - { name: "title", label: "Text", widget: "string" }
           - { name: "description", label: "Description", widget: "string" }
           - { name: "siteUrl", label: "Site Url", widget: "string" }
           - { name: "siteName", label: "Site Name", widget: "string" }
+          - { name: "imgSrc", label: "Image", widget: "image" }
           - { name: "imgAtl", label: "Image Alt", widget: "string" }
   - name: "components"
     label: "Components"
