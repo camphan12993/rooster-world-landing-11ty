@@ -69,16 +69,17 @@ collections:
                 required: false
                 name: "galleryImages"
                 widget: "list"
-                summary: "{{fields.image}}"
-                fields:
-                  - label: "Image"
-                    name: "image"
-                    widget: "image"
-                    required: false
-                  - label: "Video"
-                    name: "videoUrl"
-                    widget: "string"
-                    required: false
+                field:
+                  {
+                    label: "Image",
+                    name: "image",
+                    widget: "image",
+                    required: false,
+                  }
+              - label: "Video"
+                name: "videoUrl"
+                widget: "string"
+                required: false
               - name: "link"
                 required: false
                 label: "Link"
