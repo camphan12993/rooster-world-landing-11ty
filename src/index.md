@@ -1,6 +1,6 @@
 ---
 title: Rooster World Vietnam
-description: ROOSTER WORLD VIET NAM focuses on providing impressive Designs,
+description: ROOSTER WORLD VIETNAM focuses on providing impressive Designs,
   Illustrations and Websites to help promote your business
 imgsrc: /assets/img/cover.png
 siteUrl: https://rooster-world.com
