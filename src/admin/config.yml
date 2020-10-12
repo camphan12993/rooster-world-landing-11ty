@@ -30,7 +30,7 @@ collections:
               - name: "title"
                 label: "Title"
                 widget: "string"
-              - name: "video"
+              - name: "videoUrl"
                 label: "Video Url"
                 widget: "string"
                 required: false
