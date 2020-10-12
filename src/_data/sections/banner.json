@@ -1,29 +1,36 @@
 {
-	"banners": [
-		{
-			"image": "/assets/img/slide_macdinhchi.png",
-			"icon": "/assets/img/pen-solid.svg",
-			"subtitle": "Illustration",
-			"title": "#VIETNAMREIMAGINED TOP FEATURE"
-		},
-		{
-			"image": "/assets/img/slide_calendarartboard-2.png",
-			"icon": "/assets/img/pen-solid.svg",
-			"subtitle": "illustration",
-			"title": "calendar 2020"
-		},
-		{
-			"image": "/assets/img/slide_graphic.png",
-			"icon": "/assets/img/pen-solid.svg",
-			"subtitle": "Branding identity ",
-			"title": "Graphic design"
-		},
-		{
-			"image": "/assets/img/photograph.png",
-			"icon": "/assets/img/pen-solid.svg",
-			"subtitle": "Photograph hostel branding design",
-			"title": "Graphic design",
-			"videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601021474/video-1601021383_pouond.mp4"
-		}
-	]
+  "banners": [
+    {
+      "image": "/assets/img/slide_macdinhchi.png",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "Illustration",
+      "title": "#VIETNAMREIMAGINED TOP FEATURE"
+    },
+    {
+      "image": "/assets/img/slide_calendarartboard-2.png",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "illustration",
+      "title": "calendar 2020"
+    },
+    {
+      "image": "/assets/img/slide_graphic.png",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "Branding identity ",
+      "title": "Graphic design"
+    },
+    {
+      "image": "/assets/img/photograph.png",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "Photograph hostel branding design",
+      "title": "Graphic design",
+      "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601021474/video-1601021383_pouond.mp4"
+    },
+    {
+      "image": "/assets/img/danang.gif",
+      "icon": "/assets/img/pen-solid.svg",
+      "subtitle": "Graphic Design",
+      "title": "Da Nang Intro Video",
+      "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1602489810/final_video_f35kla.mp4"
+    }
+  ]
 }
