@@ -83,6 +83,22 @@
       "galleryImages": [],
       "thumnail": "/assets/img/danang.gif",
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1602489810/final_video_f35kla.mp4"
+    },
+    {
+      "thumnail": "/assets/img/mockup.png",
+      "name": "Wild Cat Logo ",
+      "galleryImages": [
+        "/assets/img/artboard-1-copy.png",
+        "/assets/img/mockup.png"
+      ]
+    },
+    {
+      "name": "Hide Boutique Logo",
+      "thumnail": "/assets/img/mock.png",
+      "galleryImages": [
+        "/assets/img/mock.png",
+        "/assets/img/artboard-1.png"
+      ]
     }
   ]
 }
