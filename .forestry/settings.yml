@@ -7,11 +7,10 @@ sections:
 - type: document
   path: src/_data/sections/banner.json
   label: Banners
-  match: "**/*"
-upload_dir: src/assets/img
-public_path: "/assets/img"
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
