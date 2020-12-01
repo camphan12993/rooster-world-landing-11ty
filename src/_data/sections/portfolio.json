@@ -17,6 +17,7 @@
         "/assets/img/img_1999.jpg",
         "/assets/img/raining-road.jpg"
       ],
+      "videoUrl":"",
       "description": "Studying based on Goro-Fujita's style.  ",
       "icon": "/assets/img/pen-solid.svg",
       "link": {
@@ -34,6 +35,7 @@
         "/assets/img/7.png",
         "/assets/img/other.png"
       ],
+      "videoUrl":"",
       "link": {
         "text": "",
         "url": ""
@@ -43,6 +45,7 @@
       "name": "Finger Print Coming soon page",
       "description": "Neumorphism Design, Dark Mode, Countdown Timer",
       "icon": "/assets/img/desktop-solid.svg",
+      "videoUrl":"",
       "link": {
         "text": "Url",
         "url": "https://coming-soon-neumorphism.netlify.app/"
@@ -87,6 +90,7 @@
     {
       "thumnail": "/assets/img/mockup.png",
       "name": "Wild Cat Logo ",
+      "videoUrl":"",
       "galleryImages": [
         "/assets/img/artboard-1-copy.png",
         "/assets/img/mockup.png"
@@ -95,6 +99,7 @@
     {
       "name": "Hide Boutique Logo",
       "thumnail": "/assets/img/mock.png",
+      "videoUrl":"",
       "galleryImages": [
         "/assets/img/mock.png",
         "/assets/img/artboard-1.png"
