@@ -96,10 +96,10 @@
     },
     {
       "name": "Hide Boutique Logo",
-      "thumnail": "/assets/img/mock.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606798424/rooster/mock_huse62.png",
       "galleryImages": [
-        "/assets/img/mock.png",
-        "/assets/img/artboard-1.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798424/rooster/mock_huse62.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798614/rooster/artboard-1_rqajrn.png"
       ]
     }
   ]
