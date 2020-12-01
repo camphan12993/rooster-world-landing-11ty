@@ -9,7 +9,7 @@ sections:
   label: Banners
 upload_dir: rooster
 public_path: ''
-front_matter_path: ''
+front_matter_path: "/upload"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
