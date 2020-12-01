@@ -4,6 +4,11 @@ backend:
 media_folder: "src/assets/img"
 public_folder: "/assets/img"
 publish_mode: editorial_workflow
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dduublnsr
+    api_key: 496619842616768
 
 collections:
   - name: "home"
