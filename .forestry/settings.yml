@@ -5,6 +5,26 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: src/_data/settings.json
+  label: Settings
+  match: "**/*"
+- type: document
+  path: src/_data/header.json
+  label: Header
+  match: "**/*"
+- type: document
+  path: src/_data/footer.json
+  label: Footer
+  match: "**/*"
+- type: document
+  path: src/_data/sections/service.json
+  label: Services
+  match: "**/*"
+- type: document
+  path: src/index.md
+  label: Meta
+  match: "**/*"
+- type: document
   path: src/_data/sections/portfolio.json
   label: Porfolios
 - type: document
