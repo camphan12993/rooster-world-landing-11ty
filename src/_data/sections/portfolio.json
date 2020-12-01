@@ -87,11 +87,11 @@
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1602489810/final_video_f35kla.mp4"
     },
     {
-      "thumnail": "/assets/img/mockup.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606798423/rooster/mockup_wlsims.png",
       "name": "Wild Cat Logo ",
       "galleryImages": [
-        "/assets/img/artboard-1-copy.png",
-        "/assets/img/mockup.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798516/rooster/artboard-1-copy_puqm9e.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798423/rooster/mockup_wlsims.png"
       ]
     },
     {
