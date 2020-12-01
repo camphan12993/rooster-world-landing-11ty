@@ -60,9 +60,9 @@
     },
     {
       "name": "Son Tra's mascot",
-      "thumnail": "/assets/img/vooc3.jpg",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/vooc3_oomka3.jpg",
       "galleryImages": [
-        "/assets/img/vooc3.jpg"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/vooc3_oomka3.jpg"
       ]
     },
     {
