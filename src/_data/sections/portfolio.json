@@ -19,7 +19,6 @@
       ],
       "videoUrl":"",
       "description": "Studying based on Goro-Fujita's style.  ",
-      "icon": "/assets/img/pen-solid.svg",
       "link": {
         "text": "",
         "url": ""
@@ -44,7 +43,6 @@
     {
       "name": "Finger Print Coming soon page",
       "description": "Neumorphism Design, Dark Mode, Countdown Timer",
-      "icon": "/assets/img/desktop-solid.svg",
       "videoUrl":"",
       "link": {
         "text": "Url",

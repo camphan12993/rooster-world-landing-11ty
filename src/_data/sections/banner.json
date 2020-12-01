@@ -2,32 +2,32 @@
   "banners": [
     {
       "image": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/slide_macdinhchi_ys8vnb.png",
-      "icon": "/assets/img/pen-solid.svg",
+      "icon": "brush-outline",
       "subtitle": "Illustration",
       "title": "#VIETNAMREIMAGINED TOP FEATURE"
     },
     {
       "image": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/slide_calendarartboard-2_ybjorb.png",
-      "icon": "/assets/img/pen-solid.svg",
+      "icon": "brush-outline",
       "subtitle": "illustration",
       "title": "calendar 2020"
     },
     {
       "image": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/slide_graphic_ks5q5e.png",
-      "icon": "/assets/img/pen-solid.svg",
-      "subtitle": "Branding identity ",
+      "icon": "color-filter-outline",
+      "subtitle": "Branding identity",
       "title": "Graphic design"
     },
     {
       "image": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/32207562_1771260006254889_845056303209381888_n_y9ob2a.jpg",
-      "icon": "/assets/img/pen-solid.svg",
+      "icon": "color-filter-outline",
       "subtitle": "Photograph hostel branding design",
       "title": "Graphic design",
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601021474/video-1601021383_pouond.mp4"
     },
     {
       "image": "https://res.cloudinary.com/dduublnsr/image/upload/v1606796861/rooster/danang_zda7du.png",
-      "icon": "/assets/img/pen-solid.svg",
+      "icon": "color-filter-outline",
       "subtitle": "Graphic Design",
       "title": "Da Nang Intro Video",
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1602489810/final_video_f35kla.mp4"

@@ -9,4 +9,5 @@ imgSrc: https://res.cloudinary.com/dduublnsr/image/upload/v1606802454/rooster/12
 imgAtl: Rooster World site Img
 layout: layouts/home.liquid
 calloutImg: https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/pokemon_dhs1hd.png
+loadingImg: https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/loading_vlxuuo.gif
 ---

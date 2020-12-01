@@ -2,19 +2,19 @@
 	"services": [
 		{
 			"name": "illustration",
-			"icon": "/assets/img/pen-solid.svg"
+			"icon": "brush-outline"
 		},
 		{
 			"name": "Graphic Design",
-			"icon": "/assets/img/palette-solid.svg"
+			"icon": "color-filter-outline"
 		},
 		{
 			"name": "Website",
-			"icon": "/assets/img/desktop-solid.svg"
+			"icon": "globe-outline"
 		},
 		{
 			"name": "3D",
-			"icon": "/assets/img/cube-solid.svg"
+			"icon": "cube-outline"
 		}
 	]
 }

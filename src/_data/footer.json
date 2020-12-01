@@ -3,20 +3,23 @@
   "contact": [
     {
       "text": "(+84) 0935050930",
-      "icon": "/assets/img/phone-solid.svg"
+      "icon": "call-outline"
     },
     {
       "text": "Da Nang, Viet Nam",
-      "icon": "/assets/img/location-arrow-solid.svg"
+      "icon": "location-outline"
     },
     {
       "text": "roosterworldvn@gmail.com",
-      "icon": "/assets/img/envelope-solid.svg"
+      "icon": "mail-outline"
     }
   ],
   "copyRight": "Copyright ©2020 All rights reserved",
   "madeBy": {
     "author": "Rooster World Viet Nam",
     "url": "#"
-  }
+  },
+  "logo": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795930/rooster/icon_svg_zphy01.svg",
+  "rightImg": "https://res.cloudinary.com/dduublnsr/image/upload/v1606803925/rooster/right-footer_uhg1ig.png",
+  "leftImg": "https://res.cloudinary.com/dduublnsr/image/upload/v1606803977/rooster/left-footer_r0qe9j.png"
 }

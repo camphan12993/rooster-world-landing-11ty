@@ -17,7 +17,7 @@
           <div class='flex-col md:flex md:flex-row md:items-center md:relative md:bg-opacity-0 md:shadow-none md:border-none md:mt-0 social-menu absolute z-40 hidden left-1/2 transform -translate-x-1/2 top-full shadow-md rounded-md bg-white mt-2' id='social-menu'>
             {% for item in settings.socials %}
               <a href="{{item.url}}" class='md:border-none block p-4 text-gray-600 transition duration-200 hover:text-gray-400'>
-                <ion-icon class='text-lg' src="{{ item.icon }}"></ion-icon>
+                <ion-icon class='text-2xl' name="{{ item.icon }}"></ion-icon>
               </a>
             {% endfor %}
           </div>
