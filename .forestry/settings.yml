@@ -5,12 +5,35 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: src/_data/settings.json
+  label: Settings
+  match: "**/*"
+- type: document
+  path: src/_data/header.json
+  label: Header
+  match: "**/*"
+- type: document
+  path: src/_data/footer.json
+  label: Footer
+  match: "**/*"
+- type: document
+  path: src/_data/sections/service.json
+  label: Services
+  match: "**/*"
+- type: document
+  path: src/index.md
+  label: Meta
+  match: "**/*"
+- type: document
+  path: src/_data/sections/portfolio.json
+  label: Porfolios
+- type: document
   path: src/_data/sections/banner.json
   label: Banners
 upload_dir: rooster
 public_path: ''
-front_matter_path: ''
-use_front_matter_path: 
+front_matter_path: "/upload"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install

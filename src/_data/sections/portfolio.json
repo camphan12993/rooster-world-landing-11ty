@@ -2,20 +2,20 @@
   "portfolios": [
     {
       "name": "calendar 2020",
-      "thumnail": "/assets/img/img_2007.jpg",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_2007_figmwy.jpg",
       "galleryImages": [
-        "/assets/img/chicken2.jpg",
-        "/assets/img/dalar.jpg",
-        "/assets/img/found_the_love2.jpg",
-        "/assets/img/img_1627.jpg",
-        "/assets/img/img_1683.jpg",
-        "/assets/img/img_1994.png",
-        "/assets/img/img_1995.png",
-        "/assets/img/img_1996.png",
-        "/assets/img/img_1997.jpeg",
-        "/assets/img/img_1998.png",
-        "/assets/img/img_1999.jpg",
-        "/assets/img/raining-road.jpg"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/chicken2_bjveb4.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/dalar_h2v7cg.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/found_the_love2_m62tt1.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/img_1627_qnezee.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_1683_nuhoqh.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/img_1994_qweei9.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/img_1995_wqzo1u.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/img_1996_vcbt8p.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_1997_crrsdt.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/img_1998_ax5x2k.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_1999_ayvl1z.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/raining-road_nukely.jpg"
       ],
       "videoUrl":"",
       "description": "Studying based on Goro-Fujita's style.  ",
@@ -27,13 +27,13 @@
     },
     {
       "name": "Branding Identity for \"Dai Nguyen Phu\" feng-shui shop",
-      "thumnail": "/assets/img/1.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/1_wpmsa9.png",
       "galleryImages": [
-        "/assets/img/4.png",
-        "/assets/img/5.png",
-        "/assets/img/6.png",
-        "/assets/img/7.png",
-        "/assets/img/other.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/4_qs0tjn.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/5_fqvauu.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/6_s1ijqa.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/7_quimge.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/other_pxxpqp.png"
       ],
       "videoUrl":"",
       "link": {
@@ -50,11 +50,11 @@
         "text": "Url",
         "url": "https://coming-soon-neumorphism.netlify.app/"
       },
-      "thumnail": "/assets/img/comingsoon.png"
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795930/rooster/capture_rbozlt.png"
     },
     {
       "name": "Not Found Page Design",
-      "thumnail": "/assets/img/screen-shot-2020-09-17-at-14.28.38.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/screen-shot-2020-09-17-at-14.28.38_f0l27p.png",
       "link": {
         "text": "404 page not found",
         "url": "https://404-notfound-flashlight.netlify.app/"
@@ -63,17 +63,17 @@
     },
     {
       "name": "Son Tra's mascot",
-      "thumnail": "/assets/img/vooc3.jpg",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/vooc3_oomka3.jpg",
       "galleryImages": [
-        "/assets/img/vooc3.jpg"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/vooc3_oomka3.jpg"
       ]
     },
     {
       "name": "Photograph hostel branding design",
-      "thumnail": "/assets/img/photograph.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/32207562_1771260006254889_845056303209381888_n_y9ob2a.jpg",
       "galleryImages": [
-        "/assets/img/photograph.png",
-        "/assets/img/31960806_1768358586545031_1615827702470672384_n.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795930/rooster/31960806_1768358586545031_1615827702470672384_n_fabeks.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/32207562_1771260006254889_845056303209381888_n_y9ob2a.jpg"
       ],
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601021474/video-1601021383_pouond.mp4"
     },
@@ -83,26 +83,28 @@
         "text": "",
         "url": ""
       },
-      "galleryImages": [],
-      "thumnail": "/assets/img/danang.png",
+      "galleryImages": [
+
+      ],
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606796861/rooster/danang_zda7du.png",
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1602489810/final_video_f35kla.mp4"
     },
     {
-      "thumnail": "/assets/img/mockup.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606798423/rooster/mockup_wlsims.png",
       "name": "Wild Cat Logo ",
       "videoUrl":"",
       "galleryImages": [
-        "/assets/img/artboard-1-copy.png",
-        "/assets/img/mockup.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798516/rooster/artboard-1-copy_puqm9e.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798423/rooster/mockup_wlsims.png"
       ]
     },
     {
       "name": "Hide Boutique Logo",
-      "thumnail": "/assets/img/mock.png",
       "videoUrl":"",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606798424/rooster/mock_huse62.png",
       "galleryImages": [
-        "/assets/img/mock.png",
-        "/assets/img/artboard-1.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798424/rooster/mock_huse62.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606798614/rooster/artboard-1_rqajrn.png"
       ]
     }
   ]
