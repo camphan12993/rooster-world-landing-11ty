@@ -67,10 +67,10 @@
     },
     {
       "name": "Photograph hostel branding design",
-      "thumnail": "/assets/img/photograph.png",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/32207562_1771260006254889_845056303209381888_n_y9ob2a.jpg",
       "galleryImages": [
-        "/assets/img/photograph.png",
-        "/assets/img/31960806_1768358586545031_1615827702470672384_n.png"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795930/rooster/31960806_1768358586545031_1615827702470672384_n_fabeks.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/32207562_1771260006254889_845056303209381888_n_y9ob2a.jpg"
       ],
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1601021474/video-1601021383_pouond.mp4"
     },
