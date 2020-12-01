@@ -2,20 +2,20 @@
   "portfolios": [
     {
       "name": "calendar 2020",
-      "thumnail": "/assets/img/img_2007.jpg",
+      "thumnail": "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_2007_figmwy.jpg",
       "galleryImages": [
-        "/assets/img/chicken2.jpg",
-        "/assets/img/dalar.jpg",
-        "/assets/img/found_the_love2.jpg",
-        "/assets/img/img_1627.jpg",
-        "/assets/img/img_1683.jpg",
-        "/assets/img/img_1994.png",
-        "/assets/img/img_1995.png",
-        "/assets/img/img_1996.png",
-        "/assets/img/img_1997.jpeg",
-        "/assets/img/img_1998.png",
-        "/assets/img/img_1999.jpg",
-        "/assets/img/raining-road.jpg"
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/chicken2_bjveb4.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/dalar_h2v7cg.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/found_the_love2_m62tt1.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/img_1627_qnezee.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_1683_nuhoqh.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/img_1994_qweei9.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/img_1995_wqzo1u.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/img_1996_vcbt8p.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_1997_crrsdt.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795933/rooster/img_1998_ax5x2k.png",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795931/rooster/img_1999_ayvl1z.jpg",
+        "https://res.cloudinary.com/dduublnsr/image/upload/v1606795932/rooster/raining-road_nukely.jpg"
       ],
       "description": "Studying based on Goro-Fujita's style.  ",
       "icon": "/assets/img/pen-solid.svg",
@@ -80,7 +80,9 @@
         "text": "",
         "url": ""
       },
-      "galleryImages": [],
+      "galleryImages": [
+
+      ],
       "thumnail": "/assets/img/danang.png",
       "videoUrl": "https://res.cloudinary.com/dduublnsr/video/upload/v1602489810/final_video_f35kla.mp4"
     },
