@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: src/_data/sections/portfolio.json
+  label: Porfolios
+  match: "**/*"
+- type: document
   path: src/_data/sections/banner.json
   label: Banners
 upload_dir: rooster
