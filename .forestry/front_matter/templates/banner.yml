@@ -18,3 +18,5 @@ fields:
   - type: text
     name: title
     label: title
+  config:
+    labelField: title
