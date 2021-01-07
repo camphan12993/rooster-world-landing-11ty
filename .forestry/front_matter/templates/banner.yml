@@ -20,3 +20,5 @@ fields:
     label: title
   config:
     labelField: title
+pages:
+- src/_data/sections/banner.json
