@@ -1,0 +1,20 @@
+---
+label: banner
+hide_body: true
+fields:
+- type: field_group_list
+  name: banners
+  label: banners
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: icon
+    label: icon
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: text
+    name: title
+    label: title
