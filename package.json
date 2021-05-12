@@ -22,7 +22,7 @@
 		"eleventy-plugin-lazyimages": "^1.1.2",
 		"html-minifier": "^4.0.0",
 		"postcss-cli": "^7.1.1",
-		"swiper": "^6.2.0",
+		"swiper": "^6.5.1",
 		"tailwindcss": "^1.4.6",
 		"terser": "^4.8.0"
 	},
